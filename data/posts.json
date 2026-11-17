@@ -1,0 +1,548 @@
+[
+  {
+    "slug": "klaviyo-flows-every-ecommerce-store-needs", "static": true,
+    "title": "The 6 Klaviyo flows every e-commerce store needs (and how to set them up)",
+    "description": "Welcome, abandoned checkout, browse abandonment, post-purchase, win-back and sunset: what each flow does, the timing that works and the mistakes that cost sales.",
+    "category": "email", "label": "E-commerce email", "date": "2026-11-10", "read": 9,
+    "image": "assets/work/klaviyo-ecommerce-newsletter-editor-preview.jpg"
+  },
+  {
+    "slug": "abandoned-cart-email-best-practices",
+    "title": "Abandoned cart emails: timing, copy and design that win back sales",
+    "description": "How to structure an abandoned cart sequence that recovers revenue without training customers to wait for discounts, with timing, subject lines and design tips.",
+    "category": "email", "label": "E-commerce email", "date": "2026-11-07", "read": 6,
+    "image": "assets/work/klaviyo-ecommerce-newsletter-editor-preview.jpg",
+    "answer": "A strong abandoned cart sequence sends 2 to 3 emails: a friendly reminder 2 to 4 hours after the shopper leaves, an objection-handling email the next day, and an optional incentive after 48 to 72 hours for higher-value carts only. Show the exact items left behind and stop the sequence the moment they buy.",
+    "sections": [
+      { "id": "why", "h": "Why abandoned cart emails work", "html": "<p>Someone who adds an item to their cart has already done most of the buying journey: they found you, chose a product and started to commit. Something interrupted them, whether that was a delivery fee, a question about sizing or simply a notification on their phone. An abandoned cart email reaches them while that intent is still warm, which is why this is usually one of the highest-earning automations a store can run.</p>" },
+      { "id": "timing", "h": "The timing that works", "html": "<ul><li><strong>Email 1, after 2 to 4 hours:</strong> a simple reminder with a picture of their items and a single button back to checkout.</li><li><strong>Email 2, after about 24 hours:</strong> answer the reasons people hesitate, such as shipping times, returns, sizing or reviews.</li><li><strong>Email 3, after 48 to 72 hours (optional):</strong> a small incentive, ideally only for first-time buyers or carts above a set value.</li></ul><p>Sending the first email within minutes can feel intrusive. A short delay respects the shopper and still catches them on the same day.</p>" },
+      { "id": "copy", "h": "Copy and design tips", "html": "<p>Write like a helpful shop assistant, not a debt collector. Subject lines such as <em>Still thinking it over?</em> or <em>Your basket is saved</em> feel friendly. Keep the layout simple: product image, name, price, one clear button and a short line of reassurance about returns or support. Add one or two reviews of the product in the cart if you have them, because social proof does a lot of the persuading for you.</p>" },
+      { "id": "mistakes", "h": "Mistakes to avoid", "html": "<ul><li>Not excluding people who have already purchased, so buyers receive reminders after paying.</li><li>Offering a discount in the first email, which teaches customers to abandon carts on purpose.</li><li>Broken dynamic product blocks that show the wrong image or price. Always test with a real cart.</li><li>Running cart and browse abandonment at the same time without filters, so shoppers get two reminders on the same day.</li></ul>" }
+    ],
+    "faqs": [
+      { "q": "Should every abandoned cart email include a discount?", "a": "No. Most shoppers return with a reminder alone. Save incentives for the last email and for customers where it actually changes behaviour, such as first-time buyers or high-value carts." },
+      { "q": "What is the difference between abandoned cart and abandoned checkout?", "a": "Abandoned cart triggers when someone adds to cart; abandoned checkout triggers when they start checkout and usually have entered an email. Checkout flows reach more identified shoppers and tend to convert better." }
+    ]
+  },
+  {
+    "slug": "spf-dkim-dmarc-email-deliverability-guide", "static": true,
+    "title": "SPF, DKIM and DMARC explained: the email deliverability checklist",
+    "description": "The three DNS records that decide whether your emails reach the inbox, what Gmail, Yahoo and Outlook expect, and the list habits that keep you there.",
+    "category": "deliverability", "label": "Deliverability", "date": "2026-11-03", "read": 8,
+    "image": "assets/work/email-campaign-performance-dashboard.jpg"
+  },
+  {
+    "slug": "welcome-email-series-guide",
+    "title": "How to write a welcome email series that turns subscribers into customers",
+    "description": "A practical welcome series blueprint: how many emails to send, what each one should say, when to send them and how to measure success.",
+    "category": "email", "label": "Email marketing", "date": "2026-10-31", "read": 6,
+    "image": "assets/work/hubspot-newsletter-2.jpg",
+    "answer": "A good welcome series has 3 to 5 emails over about a week: deliver what you promised, introduce your story, show proof, help people choose and end with a clear next step. Personalise it by how they signed up and stop it as soon as they buy or book.",
+    "sections": [
+      { "id": "why", "h": "Why the welcome series matters most", "html": "<p>New subscribers are more attentive than they will ever be again. They just raised their hand. The welcome series is your chance to make a first impression, deliver value and set the expectation that your emails are worth opening. Brands that skip it often see engagement fall away within a few weeks.</p>" },
+      { "id": "structure", "h": "A five-email structure", "html": "<ol><li><strong>Deliver:</strong> send the discount, guide or resource immediately and say what to expect next.</li><li><strong>Story:</strong> why you exist and who you help, told in a human voice.</li><li><strong>Proof:</strong> reviews, results or a short case study.</li><li><strong>Guide:</strong> help them choose: best-sellers, a quiz or a how-to.</li><li><strong>Nudge:</strong> a clear call to action, such as a reminder of the offer or a link to book.</li></ol>" },
+      { "id": "personalise", "h": "Personalise by signup source", "html": "<p>Someone who downloaded a guide on deliverability wants different follow-up from someone who joined from a product page. Use tags or list properties to branch the first one or two emails by source, then merge them into a shared series. Small changes like this make the emails feel written for the reader.</p>" },
+      { "id": "measure", "h": "How to measure success", "html": "<p>Look beyond open rates. Track click rate, conversion to first purchase or booked call, and unsubscribe rate per email. If one email has a noticeably higher unsubscribe rate, rewrite it rather than deleting the whole series.</p>" }
+    ],
+    "faqs": [
+      { "q": "How many emails should a welcome series have?", "a": "Three to five emails over five to ten days works well for most businesses. Enough to build trust, short enough that people still remember signing up." },
+      { "q": "Should the welcome series stop when someone buys?", "a": "Yes. Add an exit condition so buyers move to a post-purchase flow instead of receiving first-purchase offers." }
+    ]
+  },
+  {
+    "slug": "hubspot-vs-gohighlevel-for-small-b2b", "static": true,
+    "title": "HubSpot vs GoHighLevel: which CRM fits a small B2B business or agency?",
+    "description": "An honest comparison of features, pricing models, automation and who each platform suits best.",
+    "category": "crm", "label": "CRM", "date": "2026-10-27", "read": 8,
+    "image": "assets/work/hubspot-to-gohighlevel-migration.jpg"
+  },
+  {
+    "slug": "post-purchase-email-flow",
+    "title": "The post-purchase email flow: reduce refunds and win the second order",
+    "description": "What to send after someone buys, from thank-you to review request to replenishment, and how to time it so customers come back.",
+    "category": "email", "label": "E-commerce email", "date": "2026-10-24", "read": 6,
+    "image": "assets/work/zap-order-router-whatsapp-slack.jpg",
+    "answer": "A post-purchase flow should thank the customer, set delivery expectations, help them use the product, ask for a review once it arrives and invite a second purchase at the right time. Split first-time and repeat buyers so each gets the right tone.",
+    "sections": [
+      { "id": "why", "h": "Why the sale is only the beginning", "html": "<p>Winning a second order from an existing customer is far easier than finding a new one. Yet many stores send a receipt and then nothing until the next promotion. A thoughtful post-purchase flow reduces anxious support emails, cuts refunds caused by misuse and builds the habit of buying again.</p>" },
+      { "id": "sequence", "h": "The sequence", "html": "<ul><li><strong>Thank you (immediately):</strong> reassurance, what happens next and how to reach you.</li><li><strong>Get the most from it (around delivery):</strong> care tips, a short video or FAQs.</li><li><strong>Review request (one to two weeks after delivery):</strong> make it one click.</li><li><strong>Cross-sell or replenish:</strong> timed to when people usually need more.</li></ul>" },
+      { "id": "split", "h": "First-time versus repeat buyers", "html": "<p>A first order deserves a warm welcome to the brand and more education. A repeat customer already knows you, so focus on new arrivals, loyalty perks or a VIP thank-you. One conditional split near the start of the flow handles this neatly.</p>" },
+      { "id": "automation", "h": "Connect the rest of your stack", "html": "<p>Post-purchase is also where integrations shine: order details can notify your team in Slack, update a spreadsheet or trigger a WhatsApp confirmation. In one <a href='{{root}}work/zapier-shopify-order-automation.html'>bakery project</a>, orders flowed from form to Shopify to the kitchen without anyone typing them twice.</p>" }
+    ],
+    "faqs": [
+      { "q": "When should I ask for a review?", "a": "After the customer has had time to use the product, usually one to two weeks after delivery rather than after purchase." },
+      { "q": "Is a post-purchase flow only for e-commerce?", "a": "No. Service businesses use the same idea for onboarding, check-ins and referral requests after a job is finished." }
+    ]
+  },
+  {
+    "slug": "crm-migration-checklist", "static": true,
+    "title": "The CRM migration checklist: switch platforms without losing data",
+    "description": "A 10-step plan for moving contacts, deals and automations, with the reconciliation step most teams skip.",
+    "category": "crm", "label": "CRM", "date": "2026-10-20", "read": 7,
+    "image": "assets/work/mailchimp-list-migration-qa.jpg"
+  },
+  {
+    "slug": "win-back-email-campaign-guide",
+    "title": "Win-back emails: how to re-engage customers who stopped buying",
+    "description": "Define lapsed customers properly, write a three-step win-back sequence and decide when to let people go to protect deliverability.",
+    "category": "email", "label": "Retention", "date": "2026-10-17", "read": 6,
+    "image": "assets/work/mailchimp-re-engagement.jpg",
+    "answer": "A win-back flow targets customers who have not bought within their usual repurchase window. Send a what's-new email, then a personalised recommendation, then your best offer, and suppress anyone who still doesn't engage so your list stays healthy.",
+    "sections": [
+      { "id": "define", "h": "Define 'lapsed' for your business", "html": "<p>There is no universal number. A coffee subscription might call a customer lapsed after 45 days; a furniture store might wait a year. Look at how long your typical customer waits between orders and set the trigger a little after that point.</p>" },
+      { "id": "sequence", "h": "The three-step win-back", "html": "<ol><li><strong>What's new:</strong> new products, improvements or content they missed.</li><li><strong>Personal pick:</strong> recommendations based on what they bought before.</li><li><strong>Best offer:</strong> a meaningful incentive with a clear deadline.</li></ol><p>Anyone who opens, clicks or buys is tagged as re-engaged and returns to your normal campaigns.</p>" },
+      { "id": "letgo", "h": "Know when to let go", "html": "<p>Contacts who ignore every email drag down your engagement and make mailbox providers trust you less. After the win-back, move non-responders to a short sunset sequence and then suppress them. Smaller, engaged lists usually earn more than large, silent ones.</p>" },
+      { "id": "example", "h": "A real example", "html": "<p>In a <a href='{{root}}work/mailchimp-reengagement-deliverability.html'>Mailchimp re-engagement journey</a> I built, inactive subscribers received a 'We miss you' email, a seven-day wait and then a branch: engaged contacts got a saved offer, unengaged ones a last-chance email before removal.</p>" }
+    ],
+    "faqs": [
+      { "q": "Should win-back emails always include a discount?", "a": "Not always. Start with value and personalisation; keep the strongest incentive for the final email." },
+      { "q": "What happens to people who don't respond?", "a": "Move them to a sunset flow and suppress them to protect your sender reputation and reduce platform costs." }
+    ]
+  },
+  {
+    "slug": "a2p-10dlc-registration-gohighlevel", "static": true,
+    "title": "A2P 10DLC registration in GoHighLevel: how to get approved first time",
+    "description": "What carriers check, the common rejection reasons and how to write a compliant campaign.",
+    "category": "deliverability", "label": "SMS compliance", "date": "2026-10-13", "read": 7,
+    "image": "assets/work/approved-a2p-10dlc-brand-campaign-compliance.jpg"
+  },
+  {
+    "slug": "email-list-cleaning-guide",
+    "title": "Email list cleaning: how and when to remove contacts safely",
+    "description": "Why a smaller list often earns more, which contacts to remove, how to re-permission old lists and how often to clean.",
+    "category": "deliverability", "label": "Deliverability", "date": "2026-10-10", "read": 5,
+    "image": "assets/work/mailchimp-list-migration-qa.jpg",
+    "answer": "Clean your list every quarter: remove hard bounces and spam complainers immediately, run a re-engagement campaign for contacts inactive for 90 to 180 days, and suppress anyone who still doesn't respond. Never import contacts without clear consent.",
+    "sections": [
+      { "id": "why", "h": "Why cleaning improves results", "html": "<p>Mailbox providers watch how people interact with your emails. When a large share of your list never opens, your messages start to look unwanted and slip towards the promotions tab or spam. Removing silent contacts raises engagement rates, improves inbox placement and, on most platforms, lowers your bill.</p>" },
+      { "id": "who", "h": "Who to remove", "html": "<ul><li>Hard bounces and invalid addresses: remove immediately.</li><li>Spam complaints: suppress immediately and permanently.</li><li>Long-term inactive contacts: give them a re-engagement chance first.</li><li>Role addresses such as info@ or admin@ on B2B lists: review case by case.</li></ul>" },
+      { "id": "repermission", "h": "Re-permissioning old lists", "html": "<p>If you inherited a list or are moving platforms and consent is unclear, do not mail it all at once. Send a confirmation email and only keep people who say yes. My <a href='{{root}}work/mailchimp-permission-list-migration.html'>permission-based migration</a> case study shows how to do this without risking your account.</p>" },
+      { "id": "often", "h": "How often to clean", "html": "<p>Quarterly is a good rhythm for most businesses, with automatic suppression of bounces and complaints running all the time. A sunset flow inside your platform can do most of the work for you once it's set up.</p>" }
+    ],
+    "faqs": [
+      { "q": "Will cleaning my list reduce sales?", "a": "Rarely. Contacts who never open almost never buy, and removing them usually improves the results of everyone who remains." },
+      { "q": "Can I buy an email list to grow faster?", "a": "No. Purchased lists damage deliverability, break most platforms' terms and often break privacy laws." }
+    ]
+  },
+  {
+    "slug": "lead-nurture-email-sequence-for-coaches-and-saas", "static": true,
+    "title": "The 7-email lead nurture sequence for coaches and SaaS",
+    "description": "A ready-to-adapt nurture blueprint that turns new subscribers into booked calls and trials.",
+    "category": "email", "label": "Email marketing", "date": "2026-10-06", "read": 8,
+    "image": "assets/work/hubspot-lead-nurture-funnel-automation.jpg"
+  },
+  {
+    "slug": "email-segmentation-strategies",
+    "title": "Email segmentation strategies that make every campaign more relevant",
+    "description": "Seven practical ways to segment your list, from engagement to purchase behaviour, and how to build segments that update themselves.",
+    "category": "email", "label": "Email marketing", "date": "2026-10-03", "read": 6,
+    "image": "assets/work/winter-campaign-crm-workflow-dashboard.jpg",
+    "answer": "The most useful segments are based on engagement, purchase history, lifecycle stage, interests and location. Build them as dynamic segments that update automatically, and start with just three or four rather than dozens you never use.",
+    "sections": [
+      { "id": "why", "h": "Why segmentation matters", "html": "<p>Sending the same message to everyone forces you to write for the average reader, who doesn't exist. Segments let you send fewer, more relevant emails, which lifts clicks and lowers unsubscribes at the same time.</p>" },
+      { "id": "seven", "h": "Seven segments worth building", "html": "<ol><li><strong>Engaged in the last 90 days</strong>: your default send audience.</li><li><strong>New subscribers</strong>: still in the welcome period.</li><li><strong>First-time buyers</strong> versus <strong>repeat customers</strong>.</li><li><strong>VIPs</strong>: high spend or high order count.</li><li><strong>Interest-based</strong>: from preference checkboxes or browsing.</li><li><strong>Location or time zone</strong>: for timing and relevance.</li><li><strong>At risk</strong>: customers past their usual repurchase window.</li></ol>" },
+      { "id": "dynamic", "h": "Make segments update themselves", "html": "<p>Build segments from rules (behaviour, properties, dates) rather than static imports. In one <a href='{{root}}work/hubspot-winter-campaign-workflow.html'>HubSpot seasonal campaign</a>, a five-criteria active list kept the audience precise without anyone maintaining it by hand.</p>" },
+      { "id": "start", "h": "Start small", "html": "<p>It's tempting to build twenty segments on day one. Start with engaged, new, customers and VIPs. Once those are working and you can see the difference in results, add more.</p>" }
+    ],
+    "faqs": [
+      { "q": "How many segments should I have?", "a": "Start with three or four that you will actually use in campaigns, then add more only when you have content that fits them." },
+      { "q": "What is the difference between a list and a segment?", "a": "A list is a group people join; a segment is a rule-based view that updates automatically as people's behaviour or details change." }
+    ]
+  },
+  {
+    "slug": "email-subject-lines-that-get-opened",
+    "title": "Email subject lines that get opened (without sounding like spam)",
+    "description": "Simple, repeatable formulas for subject lines and preview text, what to avoid and how to test properly.",
+    "category": "email", "label": "Copywriting", "date": "2026-09-30", "read": 5,
+    "image": "assets/work/wellness-newsletter-campaign-editor.jpg",
+    "answer": "Good subject lines are short, specific and honest about what's inside. Pair them with preview text that adds new information, avoid all caps and misleading tricks, and test one variable at a time with a large enough audience.",
+    "sections": [
+      { "id": "formulas", "h": "Five formulas that work", "html": "<ul><li><strong>The specific benefit:</strong> <em>Cut your abandoned carts this week</em>.</li><li><strong>The question:</strong> <em>Is your welcome email doing its job?</em></li><li><strong>The how-to:</strong> <em>How to set up DMARC in 10 minutes</em>.</li><li><strong>The curiosity gap:</strong> <em>The flow most stores forget</em>.</li><li><strong>The personal note:</strong> <em>Quick question about your CRM</em>.</li></ul>" },
+      { "id": "preview", "h": "Don't waste the preview text", "html": "<p>The preview text is the second subject line. Use it to add detail rather than repeat the subject. If you leave it blank, many inboxes show the first line of your email, which is often 'View in browser'.</p>" },
+      { "id": "avoid", "h": "What to avoid", "html": "<ul><li>ALL CAPS and lots of exclamation marks.</li><li>Fake 'Re:' or 'Fwd:' prefixes.</li><li>Promises the email doesn't keep, which raise complaints.</li></ul>" },
+      { "id": "test", "h": "Test properly", "html": "<p>Change one thing at a time, send each version to a meaningful sample and judge by clicks or conversions, not only opens, since privacy features inflate open rates. A <a href='{{root}}work/mailerlite-ab-test-campaign.html'>MailerLite A/B test</a> is a simple place to start.</p>" }
+    ],
+    "faqs": [
+      { "q": "How long should a subject line be?", "a": "Aim for roughly 30 to 50 characters so it isn't cut off on mobile, and put the most important words first." },
+      { "q": "Do emojis help open rates?", "a": "Sometimes, for some audiences. Test them rather than assuming, and never let an emoji replace a clear message." }
+    ]
+  },
+  {
+    "slug": "gohighlevel-review-request-automation",
+    "title": "How to automate Google review requests in GoHighLevel",
+    "description": "Build a review request workflow that triggers after every completed job, follows up politely and keeps unhappy feedback private.",
+    "category": "crm", "label": "GoHighLevel", "date": "2026-09-26", "read": 6,
+    "image": "assets/work/gohighlevel-customer-feedback-review-automation.jpg",
+    "answer": "Trigger a review request in GoHighLevel when an appointment is completed or an opportunity is marked won, wait a day, send a short request by SMS or email, check whether a review arrived and send one polite reminder. Thank reviewers automatically and tag anyone who needs a personal follow-up.",
+    "sections": [
+      { "id": "why", "h": "Why automate reviews", "html": "<p>Most happy customers would leave a review, but only if they are asked at the right moment and it takes seconds. Asking manually is easy to forget on busy days. An automation makes sure every customer is asked, every time.</p>" },
+      { "id": "build", "h": "The workflow, step by step", "html": "<ol><li>Trigger: opportunity moves to Closed Won or appointment status becomes completed.</li><li>Wait one day.</li><li>Send a short thank-you with a direct review link.</li><li>If/else: review received?</li><li>No: wait two days, send one friendly reminder, then tag for follow-up.</li><li>Yes: send a thank-you and end the workflow.</li></ol>" },
+      { "id": "results", "h": "What results look like", "html": "<p>In my <a href='{{root}}work/gohighlevel-review-automation.html'>review automation case study</a>, 89 of 128 enrolled customers left a review within 30 days. Results vary by industry, but the principle holds: ask consistently and make it easy.</p>" },
+      { "id": "tips", "h": "Tips for better response rates", "html": "<ul><li>Use the customer's first name and mention the service.</li><li>Link straight to the review form, not your profile page.</li><li>Keep SMS under 160 characters and include your business name.</li><li>Make sure your SMS sending is A2P 10DLC registered in the US.</li></ul>" }
+    ],
+    "faqs": [
+      { "q": "Is it allowed to only ask happy customers for reviews?", "a": "Platforms such as Google discourage review gating. Ask every customer, and handle negative feedback personally and promptly." },
+      { "q": "SMS or email for review requests?", "a": "SMS usually gets faster responses for local businesses; email works well for e-commerce. Many businesses use both with a short delay between." }
+    ]
+  },
+  {
+    "slug": "missed-call-text-back-guide",
+    "title": "Missed-call text-back: the simplest automation for local businesses",
+    "description": "Why missed calls cost more than you think and how to set up an instant text reply that books the job.",
+    "category": "crm", "label": "GoHighLevel", "date": "2026-09-23", "read": 5,
+    "image": "assets/work/voice-ai-conversation.jpg",
+    "answer": "Missed-call text-back sends an automatic SMS seconds after a call goes unanswered, offering to help by text and sharing a booking link. It captures callers who would otherwise ring the next business, and takes less than an hour to set up in GoHighLevel.",
+    "sections": [
+      { "id": "why", "h": "The real cost of a missed call", "html": "<p>Most callers don't leave voicemails. If you're on a job, driving or closed for the day, they simply call the next business on the list. For trades, clinics and studios, those missed calls are often the highest-intent leads you get.</p>" },
+      { "id": "how", "h": "How it works", "html": "<ol><li>Trigger: an inbound call is missed.</li><li>Instant SMS: 'Sorry we missed you, how can we help?'</li><li>Branch: new or existing contact.</li><li>Send the booking link and create a call-back task for the team.</li><li>Replies land in the shared inbox for a quick response.</li></ol>" },
+      { "id": "tone", "h": "Getting the tone right", "html": "<p>Keep the message short, warm and clearly from your business. Avoid sounding like a robot; something like 'Hi, it's Sam at Bright Smile Dental. Sorry we missed your call. Can I help by text?' feels natural and invites a reply.</p>" },
+      { "id": "next", "h": "Taking it further", "html": "<p>Combine text-back with <a href='{{root}}work/gohighlevel-voice-conversation-ai.html'>Conversation AI</a> so simple questions are answered instantly, and with appointment reminders to reduce no-shows. See the <a href='{{root}}work/gohighlevel-missed-call-text-back.html'>missed-call case study</a> for the full build.</p>" }
+    ],
+    "faqs": [
+      { "q": "Do I need A2P 10DLC registration for this?", "a": "If you text US numbers from a standard local number, yes. Registration keeps your texts from being filtered by carriers." },
+      { "q": "Will customers find automated texts annoying?", "a": "Not if the message is helpful and human. Most callers are relieved to get a quick response." }
+    ]
+  },
+  {
+    "slug": "gohighlevel-snapshots-for-agencies",
+    "title": "GoHighLevel snapshots for agencies: build once, launch clients faster",
+    "description": "What to include in a snapshot, how to QA it before every client launch and how to document handoffs so support tickets drop.",
+    "category": "crm", "label": "Agencies", "date": "2026-09-19", "read": 6,
+    "image": "assets/work/agency-snapshot-handoff-qa-documentation.jpg",
+    "answer": "A GoHighLevel snapshot packages pipelines, workflows, funnels, forms, calendars and templates so you can deploy a proven setup to each new client. Pair it with a standard QA checklist and a handoff document so every launch is consistent.",
+    "sections": [
+      { "id": "what", "h": "What to put in a snapshot", "html": "<ul><li>Pipelines and stages for the niche.</li><li>Core workflows: lead capture, nurture, reminders, reviews, missed-call text-back.</li><li>Funnels, forms, surveys and calendars.</li><li>Email and SMS templates with clear placeholders.</li><li>Custom fields and tags with consistent naming.</li></ul>" },
+      { "id": "qa", "h": "QA before every launch", "html": "<p>Snapshots save time, but every client has different numbers, domains and calendars. Run a checklist on each deployment: replace placeholders, test every form, trigger every workflow with a test contact, check calendar availability and confirm SMS registration status.</p>" },
+      { "id": "docs", "h": "Document the handoff", "html": "<p>A short handoff document per client, covering what was deployed, what was customised, logins and known limitations, cuts support requests and makes it easy for any team member to help. My <a href='{{root}}work/gohighlevel-snapshot-handoff-qa.html'>snapshot QA case study</a> shows a simple system for this.</p>" },
+      { "id": "update", "h": "Keep snapshots current", "html": "<p>Version your snapshots and note what changed. When you improve a workflow for one client, decide whether it belongs in the master snapshot so every future client benefits.</p>" }
+    ],
+    "faqs": [
+      { "q": "Can snapshots include integrations?", "a": "Structures and workflows yes, but each client's connected accounts, phone numbers and domains must be set up after deployment." },
+      { "q": "How long does a snapshot take to build?", "a": "A focused niche snapshot can be built and tested in one to two weeks; refining it over several client launches makes it truly reliable." }
+    ]
+  },
+  {
+    "slug": "hubspot-lead-scoring-guide",
+    "title": "HubSpot lead scoring: how to tell sales who to call first",
+    "description": "A simple, explainable lead scoring model using fit and engagement, plus the workflows that turn scores into action.",
+    "category": "crm", "label": "HubSpot", "date": "2026-09-16", "read": 6,
+    "image": "assets/work/hubspot-crm-contact-timeline-interface.jpg",
+    "answer": "Score leads on two things: fit (do they match your ideal customer?) and engagement (are they showing interest?). Keep the model simple enough for sales to understand, set a clear threshold for marketing-qualified leads and automate the handoff when it's reached.",
+    "sections": [
+      { "id": "fit", "h": "Fit: are they the right kind of customer?", "html": "<p>Add points for attributes that match your best customers: industry, company size, job title or country. Subtract points for poor fit, such as students or competitors. Fit tells you whether a lead is worth pursuing at all.</p>" },
+      { "id": "engagement", "h": "Engagement: are they interested now?", "html": "<p>Add points for actions that signal intent: visiting the pricing page, opening several emails, attending a webinar or requesting a demo. Let engagement points decay over time so a burst of activity months ago doesn't keep someone hot forever.</p>" },
+      { "id": "action", "h": "Turn scores into action", "html": "<p>When a contact passes your threshold, a workflow should update the lifecycle stage, assign an owner, create a task and notify sales. Without this step, scoring is just a number nobody looks at. See how lifecycle stages update automatically in the <a href='{{root}}work/hubspot-crm-lifecycle-tracking.html'>HubSpot CRM case study</a>.</p>" },
+      { "id": "review", "h": "Review it with sales", "html": "<p>Every quarter, look at which scored leads actually became customers. Adjust points with your sales team so the model reflects reality, not guesses.</p>" }
+    ],
+    "faqs": [
+      { "q": "Do I need HubSpot Professional for lead scoring?", "a": "Scoring features vary by HubSpot tier and change over time. Check your plan; simpler scoring can also be done with properties and workflows." },
+      { "q": "What is a good MQL threshold?", "a": "There is no universal number. Start with a threshold that produces a manageable number of leads for sales and refine it using conversion data." }
+    ]
+  },
+  {
+    "slug": "hubspot-workflows-for-small-business",
+    "title": "7 HubSpot workflows every small business should set up",
+    "description": "The automations that save the most time in HubSpot: lead capture, nurture, task creation, deal stages, re-engagement and more.",
+    "category": "crm", "label": "HubSpot", "date": "2026-09-12", "read": 6,
+    "image": "assets/work/hubspot-lead-nurture-funnel-automation.jpg",
+    "answer": "Start with seven HubSpot workflows: form follow-up, lead nurture, sales task creation, lifecycle stage updates, deal stage reminders, customer onboarding and re-engagement. Together they ensure no lead or customer is forgotten.",
+    "sections": [
+      { "id": "list", "h": "The seven workflows", "html": "<ol><li><strong>Form follow-up:</strong> instant thank-you and resource delivery.</li><li><strong>Lead nurture:</strong> a short value-first sequence with a behaviour check.</li><li><strong>Sales tasks:</strong> create a task when a lead shows buying signals.</li><li><strong>Lifecycle updates:</strong> move contacts to MQL or SQL automatically.</li><li><strong>Deal reminders:</strong> nudge owners when deals sit too long in a stage.</li><li><strong>Onboarding:</strong> welcome new customers and set expectations.</li><li><strong>Re-engagement:</strong> reach contacts who have gone quiet.</li></ol>" },
+      { "id": "example", "h": "A real lead nurture workflow", "html": "<p>In this <a href='{{root}}work/hubspot-lead-nurture-funnel.html'>HubSpot lead nurture build</a>, a form submission triggers a thank-you email, a two-day delay and a page-view check. Engaged leads create a task for sales; quieter leads receive a value-first email instead of a pitch.</p>" },
+      { "id": "naming", "h": "Keep workflows maintainable", "html": "<p>Use clear names such as <em>LEAD | Nurture | Ebook download</em>, add descriptions, and keep a simple log of what each workflow does. Six months from now, you or your team will thank you.</p>" },
+      { "id": "audit", "h": "Audit them regularly", "html": "<p>Workflows pile up. Every few months, check enrolment and goal conversion and retire anything that no longer earns its place. A <a href='{{root}}blog/hubspot-marketing-automation-audit-checklist.html'>HubSpot audit checklist</a> makes this quick.</p>" }
+    ],
+    "faqs": [
+      { "q": "Can I build these in HubSpot's free plan?", "a": "Some simple automation is available on lower tiers, but full workflows usually need Professional. Check current plan details before you design the system." },
+      { "q": "How many workflows is too many?", "a": "It's less about the number and more about overlap. If contacts are enrolled in several workflows that send emails, consolidate them." }
+    ]
+  },
+  {
+    "slug": "hubspot-marketing-automation-audit-checklist",
+    "title": "HubSpot marketing automation audit: a 20-point checklist",
+    "description": "Score your HubSpot portal on workflows, lists, email engagement, integrations and deliverability, then prioritise the fixes that matter.",
+    "category": "crm", "label": "HubSpot", "date": "2026-09-09", "read": 7,
+    "image": "assets/work/hubspot-marketing-automation-audit-optimization.jpg",
+    "answer": "Audit five areas: workflow performance, lists and segmentation, email engagement, integrations and data, and deliverability. Score each, list the findings by impact, and fix the highest-value issues first rather than trying to rebuild everything.",
+    "sections": [
+      { "id": "workflows", "h": "1. Workflow performance", "html": "<ul><li>Which workflows are active, and do they still match the business?</li><li>Enrolment and goal conversion for each.</li><li>Overlapping workflows sending emails to the same contacts.</li><li>Clear names, descriptions and owners.</li></ul>" },
+      { "id": "lists", "h": "2. Lists and segmentation", "html": "<ul><li>Lists unused in the last 90 days.</li><li>Static lists that should be active.</li><li>A defined engaged-contacts segment for sending.</li><li>Duplicate and incomplete contact records.</li></ul>" },
+      { "id": "email", "h": "3. Email engagement and 4. Integrations", "html": "<ul><li>Open, click and unsubscribe trends by email type.</li><li>UTM parameters on email links for reporting.</li><li>Forms, ads and other tools syncing correctly.</li><li>Property mapping and data quality.</li></ul>" },
+      { "id": "deliverability", "h": "5. Deliverability and prioritising", "html": "<p>Check that your sending domain is authenticated with SPF, DKIM and DMARC and that bounce and complaint rates are low. Then rank every finding by impact and effort. In a recent <a href='{{root}}work/hubspot-marketing-automation-audit.html'>HubSpot audit</a>, the portal scored 72/100 and the team left with five prioritised fixes and a date for the next review.</p>" }
+    ],
+    "faqs": [
+      { "q": "How often should I audit HubSpot?", "a": "A light review quarterly and a deeper audit once or twice a year keeps most portals healthy." },
+      { "q": "Can you audit a portal someone else built?", "a": "Yes. Audits are often the best first step when inheriting a portal, because they show what to keep, fix or retire." }
+    ]
+  },
+  {
+    "slug": "zapier-vs-make",
+    "title": "Zapier vs Make: which automation tool should you use?",
+    "description": "A practical comparison of Zapier and Make for small businesses: ease of use, pricing models, complex logic and when to choose each.",
+    "category": "automation", "label": "Integrations", "date": "2026-09-05", "read": 6,
+    "image": "assets/work/zap-ai-email-triage-cloze.jpg",
+    "answer": "Choose Zapier if you want the widest app support and the quickest setup for straightforward automations. Choose Make if you need complex branching, data transformation or high volumes at a lower cost per operation. Many businesses use both.",
+    "sections": [
+      { "id": "zapier", "h": "When Zapier is the better fit", "html": "<ul><li>You want something running today with minimal learning.</li><li>You need a niche app that only Zapier supports.</li><li>Your automations are mostly linear: trigger, a few steps, done.</li></ul><p>Zapier has added paths, filters, formatters and AI steps that handle surprisingly complex work, as in this <a href='{{root}}work/zapier-crm-lead-routing.html'>AI email triage system</a>.</p>" },
+      { "id": "make", "h": "When Make is the better fit", "html": "<ul><li>You need visual, multi-branch scenarios with loops and error routes.</li><li>You process large volumes and want to control cost.</li><li>You work heavily with APIs, arrays and data mapping.</li></ul>" },
+      { "id": "pricing", "h": "How pricing differs", "html": "<p>Zapier generally charges by tasks (each successful action), while Make charges by operations (each module run). Complex scenarios with many steps can be cheaper in Make, while simple automations are often easier to maintain in Zapier. Always check current pricing for your expected volume.</p>" },
+      { "id": "reliability", "h": "Whatever you choose, build for reliability", "html": "<p>Add filters so automations only run when they should, error paths for when an app is down, and logging to a sheet for anything important. A silent failure in an order or lead automation is far more costly than the subscription.</p>" }
+    ],
+    "faqs": [
+      { "q": "Can Zapier and Make work together?", "a": "Yes. Webhooks let one trigger the other, which is useful when one tool supports an app the other doesn't." },
+      { "q": "Is Make harder to learn?", "a": "It has a steeper start because it exposes more detail, but that detail is what makes complex automations possible." }
+    ]
+  },
+  {
+    "slug": "zapier-shopify-automations",
+    "title": "5 Zapier automations every Shopify store can use",
+    "description": "Order routing, customer syncing, team notifications, file handling and reporting: Shopify automations that save hours every week.",
+    "category": "automation", "label": "Integrations", "date": "2026-09-02", "read": 5,
+    "image": "assets/work/zap-bakery-orders-shopify.jpg",
+    "answer": "The most useful Shopify automations with Zapier are: creating orders from custom forms, syncing customers from booking tools, notifying your team in Slack or WhatsApp, archiving files to Google Drive and logging orders to a spreadsheet for reporting.",
+    "sections": [
+      { "id": "orders", "h": "1. Custom forms to Shopify orders", "html": "<p>If you take custom orders through a form, a Zap can read the answers, route them by product options and create the Shopify order automatically. In a <a href='{{root}}work/zapier-shopify-order-automation.html'>bakery project</a>, paths for each cake flavour removed all manual order entry.</p>" },
+      { "id": "customers", "h": "2. Booking tools to Shopify customers", "html": "<p>Bookings from Acuity or Calendly can find or create the matching Shopify customer, with an error path so nothing is lost if a step fails.</p>" },
+      { "id": "notify", "h": "3. Team notifications", "html": "<p>Post new or high-value orders to Slack, send WhatsApp alerts to the owner, or email the warehouse. Everyone sees what they need without logging in to Shopify.</p>" },
+      { "id": "files", "h": "4 and 5. Files and reporting", "html": "<p>Save attachments from emails into organised Google Drive folders, and log every order to Google Sheets for simple reporting or accounting. These small automations add up to hours saved each week.</p>" }
+    ],
+    "faqs": [
+      { "q": "Does Shopify have its own automation tool?", "a": "Yes, Shopify Flow covers many in-store automations. Zapier or Make are useful when you connect Shopify to tools outside its ecosystem." },
+      { "q": "What happens if a Zap fails?", "a": "Zapier can alert you and replay failed runs. Building error paths and logging into important Zaps keeps failures visible." }
+    ]
+  },
+  {
+    "slug": "calendly-crm-booking-automation",
+    "title": "Booking automation: connect Calendly to your CRM and email list",
+    "description": "Stop copying names from your calendar. Automatically add bookings to your CRM, tag them, create client folders and start the right follow-up.",
+    "category": "automation", "label": "Integrations", "date": "2026-08-29", "read": 5,
+    "image": "assets/work/zap-calendly-kit.jpg",
+    "answer": "Connect your booking tool to your CRM or email platform so every new booking creates or updates a contact, adds a tag, starts a pre-call sequence and creates any files you need. Rescheduled and cancelled bookings should update the same records automatically.",
+    "sections": [
+      { "id": "why", "h": "Why connect bookings to your CRM", "html": "<p>Every booked call is a hot lead. If the details stay inside your calendar, they never get the follow-up, reminders or nurture they should. Connecting the two means the right sequence starts the moment someone books.</p>" },
+      { "id": "build", "h": "A simple booking automation", "html": "<ol><li>Trigger: invitee created or rescheduled.</li><li>Create or update the contact in your CRM or email tool.</li><li>Tag by meeting type, such as discovery or audit.</li><li>Start a short pre-call sequence with what to prepare.</li><li>Create a client folder in Google Drive.</li></ol><p>This <a href='{{root}}work/zapier-kit-calendly-coach-stack.html'>coach automation stack</a> runs exactly this setup with Kit.</p>" },
+      { "id": "noshows", "h": "Reduce no-shows", "html": "<p>Send a reminder 24 hours and 1 hour before the call, include the meeting link in each, and make rescheduling easy. A short message saying what you'll cover also raises attendance.</p>" },
+      { "id": "after", "h": "After the call", "html": "<p>Use the booking status or a form after the meeting to move the contact to the next stage, whether that's a proposal sequence or a polite 'not now' nurture.</p>" }
+    ],
+    "faqs": [
+      { "q": "Can I do this without Zapier?", "a": "Many CRMs have native calendar integrations or built-in booking. Zapier or Make help when your tools don't connect directly." },
+      { "q": "What should a pre-call email include?", "a": "The time in their time zone, the meeting link, what to prepare and how to reschedule." }
+    ]
+  },
+  {
+    "slug": "facebook-lead-ads-crm-integration",
+    "title": "Facebook Lead Ads to CRM: respond to leads in seconds, not hours",
+    "description": "How to connect Facebook Lead Ads to HubSpot, GoHighLevel or another CRM, map fields correctly and trigger instant follow-up.",
+    "category": "automation", "label": "Lead generation", "date": "2026-08-26", "read": 5,
+    "image": "assets/work/meta-ads-manager-campaign-dashboard.jpg",
+    "answer": "Connect Facebook Lead Ads directly to your CRM so each lead is created in real time with its campaign source, assigned an owner and sent an instant email or SMS. Test every form field before going live and stop downloading CSV files.",
+    "sections": [
+      { "id": "speed", "h": "Speed to lead matters", "html": "<p>Someone who fills in a lead form is thinking about your offer right now. If the first contact happens tomorrow after a CSV download, much of that interest has faded and a competitor may already have called. Real-time sync fixes this.</p>" },
+      { "id": "connect", "h": "How to connect them", "html": "<ul><li>Use the CRM's native Facebook integration where available (HubSpot and GoHighLevel both offer one).</li><li>Otherwise, use Zapier or Make with the Lead Ads trigger.</li><li>Map every form question to a CRM property, including campaign and ad names.</li></ul>" },
+      { "id": "followup", "h": "Instant follow-up", "html": "<p>As soon as the contact exists, send a confirmation email or SMS, assign an owner and create a call task. In this <a href='{{root}}work/facebook-lead-ads-to-hubspot.html'>Facebook Lead Ads to HubSpot</a> setup, follow-up went from hours to seconds.</p>" },
+      { "id": "test", "h": "Test before you spend", "html": "<p>Facebook's lead testing tool lets you submit a test lead. Check that every field arrives correctly before putting budget behind the campaign.</p>" }
+    ],
+    "faqs": [
+      { "q": "Why are some lead fields missing in my CRM?", "a": "Usually a mapping issue: a question was added to the form after the integration was set up, or the property type doesn't match." },
+      { "q": "Should I call or text new leads first?", "a": "Both work. An instant automated text or email, followed by a call from your team, tends to give the best contact rates." }
+    ]
+  },
+  {
+    "slug": "server-side-tracking-attribution",
+    "title": "First-click vs last-click attribution and why server-side tracking matters",
+    "description": "Understand attribution models, why ad platforms and your CRM disagree, and how server-side tracking recovers lost conversion data.",
+    "category": "automation", "label": "Tracking", "date": "2026-08-22", "read": 6,
+    "image": "assets/work/first-click-server-side-attribution-tracking-setup.jpg",
+    "answer": "Attribution models decide which channel gets credit for a lead: first-click credits discovery, last-click credits the final touch. Browser privacy changes mean many conversions are no longer tracked, so server-side tracking sends events directly from your server to restore accuracy.",
+    "sections": [
+      { "id": "models", "h": "Attribution models in plain English", "html": "<ul><li><strong>First-click:</strong> credits the channel that introduced the customer. Good for valuing awareness.</li><li><strong>Last-click:</strong> credits the final touch before converting. Good for valuing closing channels.</li><li><strong>Multi-touch:</strong> spreads credit across the journey.</li></ul>" },
+      { "id": "disagree", "h": "Why your numbers don't match", "html": "<p>Each ad platform tends to claim credit for conversions it touched, using its own lookback window. Your CRM sees something different. Without a single source of truth, budgets end up following whichever dashboard looks best.</p>" },
+      { "id": "serverside", "h": "What server-side tracking fixes", "html": "<p>Ad blockers and privacy features stop many browser pixels from firing. Server-side tracking sends conversion events from your server or platform directly to Meta, Google and others, so fewer conversions are lost. This <a href='{{root}}work/gohighlevel-attribution-tracking.html'>GoHighLevel attribution setup</a> combined three pixels with server-side tracking and a 30-day lookback.</p>" },
+      { "id": "crm", "h": "Bring it back to the CRM", "html": "<p>Store the original source on every contact. When you can see which channel produced actual customers, not just leads, marketing decisions get much easier.</p>" }
+    ],
+    "faqs": [
+      { "q": "Which attribution model should I use?", "a": "Many small businesses start with first-click for lead source reporting and look at last-click for campaign optimisation. Consistency matters more than perfection." },
+      { "q": "Is server-side tracking complicated to set up?", "a": "Platforms like GoHighLevel and Shopify now make it much easier, but it still needs careful testing to avoid double-counting." }
+    ]
+  },
+  {
+    "slug": "cold-email-deliverability-setup",
+    "title": "Cold email setup: domains, warm-up and sequences that get replies",
+    "description": "How to run B2B cold email without hurting your main domain: secondary domains, inbox warm-up, sending limits and short sequences.",
+    "category": "deliverability", "label": "Outbound", "date": "2026-08-19", "read": 6,
+    "image": "assets/work/instantly-cold-email-campaign-dashboard.jpg",
+    "answer": "Send cold email from secondary domains, never your main one. Authenticate them, warm up each inbox gradually, keep daily volumes modest, verify every lead list and write short, specific sequences of three to four emails that make replying easy.",
+    "sections": [
+      { "id": "domains", "h": "Protect your main domain", "html": "<p>Cold email carries more risk of complaints than marketing to subscribers. Use separate domains that look like your brand, set up SPF, DKIM and DMARC on each, and point them to your main website.</p>" },
+      { "id": "warmup", "h": "Warm up and pace", "html": "<p>New inboxes need time to build a sending history. Increase volume gradually over a few weeks and spread sends across several inboxes rather than pushing one hard.</p>" },
+      { "id": "sequence", "h": "Write sequences that get replies", "html": "<ul><li>Keep each email short and about the reader's problem.</li><li>One clear, low-effort ask: a reply, not a 45-minute demo.</li><li>Three to four steps, a few days apart.</li><li>Stop immediately when someone replies.</li></ul><p>In this <a href='{{root}}work/instantly-b2b-cold-outreach.html'>Instantly campaign</a>, a three-step sequence to 5,800 prospects generated 120 replies from the first step alone.</p>" },
+      { "id": "compliance", "h": "Stay compliant", "html": "<p>Include a clear opt-out, honour it quickly, and check the rules for the countries you're emailing. Cold outreach laws vary, especially across Europe and Canada.</p>" }
+    ],
+    "faqs": [
+      { "q": "How many cold emails can one inbox send per day?", "a": "It depends on the provider and inbox age. Staying conservative and spreading volume across inboxes is safer than maximising a single account." },
+      { "q": "Should I use my marketing platform for cold email?", "a": "No. Most marketing platforms prohibit unsolicited email. Use dedicated cold email tools and separate domains." }
+    ]
+  },
+  {
+    "slug": "systeme-io-sales-funnel-guide",
+    "title": "Building a sales funnel in Systeme.io with order bumps and upsells",
+    "description": "Plan and build a Systeme.io funnel that raises average order value: sales page, checkout, order bump, one-click upsell and follow-up emails.",
+    "category": "funnels", "label": "Funnels", "date": "2026-08-15", "read": 6,
+    "image": "assets/work/systeme-io-product-sales-funnel.jpg",
+    "answer": "A Systeme.io sales funnel should run sales page, checkout with a relevant order bump, a one-click upsell, a thank-you page and a confirmation email. Keep every offer closely related to the main product and connect automation rules so buyers are tagged and followed up.",
+    "sections": [
+      { "id": "plan", "h": "Plan the offer stack", "html": "<p>Start with your main product, then add two complementary offers: a small order bump that makes the main product easier or faster to use, and a bigger upsell for buyers who want more. Every extra offer should feel like a natural next step, not a random add-on.</p>" },
+      { "id": "build", "h": "Build the steps", "html": "<ol><li>Sales page with a single, clear call to action.</li><li>Checkout page with the order bump checkbox.</li><li>One-click upsell page.</li><li>Thank-you page with access instructions.</li><li>Order confirmation email.</li></ol>" },
+      { "id": "automate", "h": "Automate the follow-up", "html": "<p>Use automation rules to tag buyers by what they purchased, enrol them in onboarding emails and remove them from sales sequences. One client said having the main offer, order bump and upsell <a href='{{root}}work/systeme-io-funnels.html'>brought together in one funnel</a> was exactly what they needed.</p>" },
+      { "id": "test", "h": "Test with real purchases", "html": "<p>Run test transactions through every path: with and without the order bump, accepting and declining the upsell. Check emails, access and tags each time.</p>" }
+    ],
+    "faqs": [
+      { "q": "Do order bumps really increase order value?", "a": "When the bump is relevant and low-friction, many buyers add it. Test different offers to see what your audience values." },
+      { "q": "Can Systeme.io handle email marketing too?", "a": "Yes. It includes email campaigns and automation rules, which keeps funnels and follow-up in one place." }
+    ]
+  },
+  {
+    "slug": "lead-magnet-landing-page-guide",
+    "title": "Lead magnet landing pages that convert visitors into subscribers",
+    "description": "Choose a lead magnet people actually want, structure the landing page and connect it to a welcome sequence that builds trust.",
+    "category": "funnels", "label": "Lead generation", "date": "2026-08-12", "read": 5,
+    "image": "assets/work/marketing-guide-landing-page.jpg",
+    "answer": "A lead magnet works when it solves one specific problem quickly. Give it a clear outcome-focused title, keep the landing page focused on that outcome with a short form above the fold, and deliver it instantly through a welcome sequence.",
+    "sections": [
+      { "id": "choose", "h": "Choose the right lead magnet", "html": "<p>Checklists, templates, short guides and calculators work well because they deliver a quick win. Avoid broad ebooks that promise everything. The best lead magnets attract exactly the people who might later buy your service.</p>" },
+      { "id": "page", "h": "Structure the page", "html": "<ul><li>Headline that states the outcome.</li><li>Three to five bullets on what's inside.</li><li>A form with as few fields as possible, ideally first name and email.</li><li>Proof: numbers, logos or a short testimonial.</li><li>One call to action repeated, no navigation menu.</li></ul>" },
+      { "id": "deliver", "h": "Deliver and follow up", "html": "<p>Send the download immediately, then continue with a short nurture sequence. The <a href='{{root}}blog/lead-nurture-email-sequence-for-coaches-and-saas.html'>7-email nurture blueprint</a> is a good template.</p>" },
+      { "id": "measure", "h": "Measure the right thing", "html": "<p>Track landing page conversion rate, but also how many subscribers from each lead magnet later book or buy. A slightly lower sign-up rate with better-fit leads is a win.</p>" }
+    ],
+    "faqs": [
+      { "q": "How many form fields should a lead magnet form have?", "a": "As few as possible. First name and email is enough for most lead magnets; ask more later through your emails." },
+      { "q": "Should the landing page have a navigation menu?", "a": "Usually not. Removing other links keeps attention on the single action you want." }
+    ]
+  },
+  {
+    "slug": "webinar-funnel-email-sequence",
+    "title": "The webinar funnel email sequence: registrations to show-ups to sales",
+    "description": "The emails and SMS to send before, during and after a webinar to raise attendance and convert viewers who weren't ready on the day.",
+    "category": "funnels", "label": "Funnels", "date": "2026-08-08", "read": 6,
+    "image": "assets/work/systeme-io-webinar-registration-funnel.jpg",
+    "answer": "A webinar sequence has three phases: confirmation and reminders before the event, a 'we're live' message at start time, and a replay plus offer sequence afterwards. Reminders boost attendance, and the replay sequence often converts as many buyers as the live session.",
+    "sections": [
+      { "id": "before", "h": "Before the webinar", "html": "<ul><li>Instant confirmation with calendar links.</li><li>A value email a few days before: what they'll learn.</li><li>Reminders 24 hours and 1 hour before.</li><li>A 'we're live' email and SMS at start time.</li></ul>" },
+      { "id": "after", "h": "After the webinar", "html": "<ul><li>Replay email to everyone, with a deadline.</li><li>Separate messages for attendees and no-shows.</li><li>Two to three emails handling objections and sharing proof.</li><li>A final reminder before the offer closes.</li></ul>" },
+      { "id": "funnel", "h": "The funnel pages", "html": "<p>Registration page, thank-you page, reminder sequence, replay page and order page. This <a href='{{root}}work/systeme-io-funnels.html'>Systeme.io build</a> included a webinar registration funnel with reminders and a replay step.</p>" },
+      { "id": "segment", "h": "Segment by behaviour", "html": "<p>Tag people who attended, who watched the replay and who clicked the offer. Each group needs a different message, and tags make that easy.</p>" }
+    ],
+    "faqs": [
+      { "q": "How many reminders should I send?", "a": "Two to three reminders before the event is typical: a day before, an hour before and when you go live." },
+      { "q": "Should I offer a replay?", "a": "Yes. Many registrants can't attend live, and a time-limited replay keeps urgency while serving them." }
+    ]
+  },
+  {
+    "slug": "ai-voice-agents-for-small-business",
+    "title": "AI voice and chat agents for small businesses: what they can really do",
+    "description": "How AI employees in tools like GoHighLevel qualify leads, book appointments and answer questions, plus how to calibrate them so they sound right.",
+    "category": "automation", "label": "AI automation", "date": "2026-08-05", "read": 6,
+    "image": "assets/work/voice-ai-conversation.jpg",
+    "answer": "AI voice and chat agents can answer common questions, qualify leads, book appointments and send reminders 24/7. They work best with a clear role, a focused knowledge base, strict boundaries and a smooth handoff to a human for anything complex.",
+    "sections": [
+      { "id": "can", "h": "What they do well", "html": "<ul><li>Answer frequently asked questions instantly.</li><li>Qualify leads with a few structured questions.</li><li>Book appointments straight into your calendar.</li><li>Send payment and appointment reminders.</li></ul>" },
+      { "id": "cant", "h": "Where they need limits", "html": "<p>AI agents shouldn't negotiate prices, give regulated advice or handle sensitive complaints. Give them explicit rules about what to say when they don't know, and a clear route to a human.</p>" },
+      { "id": "calibrate", "h": "Calibrate before you trust them", "html": "<p>Run structured test conversations: greetings, interruptions, unclear questions, off-topic requests. Adjust prompts and knowledge after each session. In this <a href='{{root}}work/gohighlevel-voice-conversation-ai.html'>Voice AI project</a>, five AI roles were tuned session by session, reaching calibration scores of up to 93%.</p>" },
+      { "id": "start", "h": "Start with one job", "html": "<p>Begin with a single, high-volume task such as after-hours enquiries or appointment booking. Once that's reliable, expand to more roles.</p>" }
+    ],
+    "faqs": [
+      { "q": "Will customers know they are talking to AI?", "a": "Be transparent. A short line explaining it's an assistant, with an option to reach a person, builds trust." },
+      { "q": "Do AI agents replace staff?", "a": "They work best handling repetitive first responses so your team can focus on conversations that need a human." }
+    ]
+  },
+  {
+    "slug": "mailchimp-vs-klaviyo",
+    "title": "Mailchimp vs Klaviyo: which is right for your online store?",
+    "description": "A practical comparison of Mailchimp and Klaviyo for e-commerce: integrations, segmentation, flows, reporting and when to switch.",
+    "category": "email", "label": "E-commerce email", "date": "2026-08-01", "read": 6,
+    "image": "assets/work/mailerlite-portfolio-2.jpg",
+    "answer": "Klaviyo is usually the stronger choice for Shopify and data-driven e-commerce brands that rely on behaviour-based flows and revenue reporting. Mailchimp suits smaller stores and service businesses that want simple campaigns and an approachable editor.",
+    "sections": [
+      { "id": "klaviyo", "h": "Where Klaviyo shines", "html": "<ul><li>Deep Shopify integration with product and order data.</li><li>Powerful segmentation using purchase and browsing behaviour.</li><li>Revenue attribution for flows and campaigns.</li><li>Built-in SMS alongside email.</li></ul>" },
+      { "id": "mailchimp", "h": "Where Mailchimp shines", "html": "<ul><li>Easy to learn, with a friendly editor.</li><li>Works for many business types, not just e-commerce.</li><li>Customer journeys cover common automations.</li></ul>" },
+      { "id": "switch", "h": "When to switch", "html": "<p>If you're running a growing Shopify store and spending time working around Mailchimp's limits, Klaviyo is often worth it. Plan the migration carefully: rebuild flows, recreate segments and check consent. See the <a href='{{root}}blog/crm-migration-checklist.html'>migration checklist</a>.</p>" },
+      { "id": "alternatives", "h": "Other options", "html": "<p>MailerLite, Kit and ActiveCampaign each have strengths for creators, coaches and service businesses. The best tool is the one your team will actually use well.</p>" }
+    ],
+    "faqs": [
+      { "q": "Is Klaviyo more expensive than Mailchimp?", "a": "Pricing depends on list size and features and changes over time. Compare current plans for your contact count and expected sending." },
+      { "q": "Can I move my flows from Mailchimp to Klaviyo?", "a": "Flows need to be rebuilt in Klaviyo, but it's a good chance to improve them using better data." }
+    ]
+  },
+  {
+    "slug": "email-marketing-kpis-to-track", "draft": true,
+    "title": "Email marketing KPIs: the metrics that actually matter",
+    "description": "Which email metrics to watch, which to treat with caution, and how to build a simple dashboard that shows revenue impact.",
+    "category": "email", "label": "Reporting", "date": "2026-07-29", "read": 5,
+    "image": "assets/work/zoho-analytics-marketing-dashboard.jpg",
+    "answer": "Focus on click rate, conversion rate, revenue (or leads) per email, list growth, unsubscribe rate and spam complaint rate. Treat open rate as a rough signal only, because privacy features inflate it.",
+    "sections": [
+      { "id": "core", "h": "The core metrics", "html": "<ul><li><strong>Click rate:</strong> are people interested enough to act?</li><li><strong>Conversion rate:</strong> do clicks become sales, bookings or sign-ups?</li><li><strong>Revenue or leads per recipient:</strong> the clearest measure of value.</li><li><strong>List growth rate:</strong> new subscribers minus losses.</li></ul>" },
+      { "id": "health", "h": "List health metrics", "html": "<ul><li>Unsubscribe rate per email.</li><li>Spam complaint rate, which you should keep very low.</li><li>Bounce rate, which spikes when list quality drops.</li></ul>" },
+      { "id": "opens", "h": "Why open rate is unreliable", "html": "<p>Privacy features in some email apps load images automatically, which records an open even if nobody read the email. Use opens to spot big changes, not to judge success.</p>" },
+      { "id": "dashboard", "h": "Build a simple dashboard", "html": "<p>Pull email and CRM data into one view: leads, conversions and campaign results. This <a href='{{root}}work/zoho-crm-flow-automation.html'>Zoho dashboard</a> combines lead trends, sources and top campaigns so leadership sees what's working at a glance.</p>" }
+    ],
+    "faqs": [
+      { "q": "What is a good click rate?", "a": "It varies by industry and email type. Compare against your own history and aim to improve steadily." },
+      { "q": "How often should I review email metrics?", "a": "Glance weekly, review in depth monthly, and look at flows quarterly." }
+    ]
+  },
+  {
+    "slug": "email-automation-for-service-businesses", "draft": true,
+    "title": "Email and SMS automation for service businesses: a starter blueprint",
+    "description": "The five automations every service business should run, from instant enquiry replies to reminders, reviews and re-booking.",
+    "category": "crm", "label": "Service businesses", "date": "2026-07-25", "read": 5,
+    "image": "assets/work/outbound-campaign-performance-dashboard.jpg",
+    "answer": "Service businesses should automate five things first: instant replies to enquiries, appointment confirmations and reminders, post-service review requests, follow-up for quotes that weren't accepted, and re-booking reminders for repeat services.",
+    "sections": [
+      { "id": "five", "h": "The five automations", "html": "<ol><li><strong>Instant enquiry reply:</strong> email or SMS within seconds of a form or call.</li><li><strong>Confirmations and reminders:</strong> reduce no-shows.</li><li><strong>Review requests:</strong> after every completed job.</li><li><strong>Quote follow-up:</strong> a polite sequence for quotes not yet accepted.</li><li><strong>Re-booking:</strong> reminders when it's time for the next service.</li></ol>" },
+      { "id": "tools", "h": "Which tools to use", "html": "<p>GoHighLevel bundles CRM, SMS, booking and reviews, which makes it popular with service businesses. HubSpot, Keap and ActiveCampaign also work well, often with Zapier connecting booking or invoicing tools.</p>" },
+      { "id": "website", "h": "Make your website part of the system", "html": "<p>Your website should feed leads straight into the CRM. Across <a href='{{root}}work/gohighlevel-websites-local-business.html'>39 GoHighLevel sites</a>, every form and calendar was wired to automatic follow-up.</p>" },
+      { "id": "start", "h": "Where to start", "html": "<p>Pick the automation tied to your biggest leak. If you miss calls, start with text-back. If you get no-shows, start with reminders. One well-built automation beats five half-finished ones.</p>" }
+    ],
+    "faqs": [
+      { "q": "Do I need SMS as well as email?", "a": "For appointment-based businesses, SMS reminders and quick replies usually make a noticeable difference." },
+      { "q": "How long does it take to set these up?", "a": "A focused starter set of automations can usually be built and tested within one to two weeks." }
+    ]
+  },
+  {
+    "slug": "zoho-flow-crm-automation", "draft": true,
+    "title": "Zoho Flow and Zoho CRM: automating lead management across your apps",
+    "description": "How to use Zoho Flow to bring leads from email, forms and other CRMs into Zoho, prioritise urgent requests and keep every tool in sync.",
+    "category": "automation", "label": "Integrations", "date": "2026-07-22", "read": 5,
+    "image": "assets/work/zoho-flow-automation-system.jpg",
+    "answer": "Zoho Flow connects Zoho CRM with Gmail, forms, project tools and chat apps. Use it to capture leads from every source, extract key details, flag urgent requests, create tasks and keep contacts updated, with dashboards in Zoho Analytics showing the results.",
+    "sections": [
+      { "id": "sources", "h": "Bring every source together", "html": "<p>Leads arrive by email, web forms, other CRMs and spreadsheets. Zoho Flow can watch each source and send clean, consistent records into Zoho CRM so your team works from one list.</p>" },
+      { "id": "priority", "h": "Prioritise what's urgent", "html": "<p>Add a condition that checks urgency or deal size. High-priority requests can create a task in your project tool and alert the team in Slack immediately, while others follow the normal process.</p>" },
+      { "id": "sync", "h": "Keep tools in sync", "html": "<p>Update CRM contacts, log activity to Google Sheets for auditing, and keep project tools aligned. This <a href='{{root}}work/zoho-crm-flow-automation.html'>Zoho automation system</a> connected four input sources to tasks, CRM updates, logging and alerts.</p>" },
+      { "id": "report", "h": "Report on it", "html": "<p>Zoho Analytics dashboards can show new leads, conversion rates and campaign performance live, replacing manual weekly reports.</p>" }
+    ],
+    "faqs": [
+      { "q": "Is Zoho Flow included with Zoho CRM?", "a": "Availability depends on your Zoho plan or bundle. Check current Zoho One and Flow pricing for your needs." },
+      { "q": "Can Zoho Flow connect to non-Zoho apps?", "a": "Yes. It supports many third-party apps and webhooks." }
+    ]
+  },
+  {
+    "slug": "hubspot-to-gohighlevel-migration-guide", "draft": true,
+    "title": "Moving from HubSpot to GoHighLevel: a step-by-step migration guide",
+    "description": "How to move contacts, pipelines and opportunities from HubSpot to GoHighLevel, what has to be rebuilt and how to avoid losing deals.",
+    "category": "crm", "label": "CRM migration", "date": "2026-07-18", "read": 6,
+    "image": "assets/work/hubspot-to-gohighlevel-migration.jpg",
+    "answer": "To migrate from HubSpot to GoHighLevel, audit your HubSpot data, map properties to custom fields, rebuild pipelines first, import contacts and then opportunities, rebuild workflows natively in GoHighLevel and reconcile counts and values before switching off HubSpot.",
+    "sections": [
+      { "id": "audit", "h": "Audit and map", "html": "<p>List every pipeline, stage, property and active workflow in HubSpot. Decide which properties become GoHighLevel custom fields and which can be left behind. Agree stage names before importing anything.</p>" },
+      { "id": "import", "h": "Import in the right order", "html": "<ol><li>Create custom fields and tags.</li><li>Rebuild pipelines and stages.</li><li>Import contacts with consent information.</li><li>Import opportunities with stage, value and owner.</li></ol>" },
+      { "id": "rebuild", "h": "Rebuild automations", "html": "<p>HubSpot workflows don't transfer. Rebuild them in GoHighLevel, taking advantage of built-in SMS, calendars and review requests. Keep them switched off until go-live.</p>" },
+      { "id": "reconcile", "h": "Reconcile before go-live", "html": "<p>Compare contact counts, opportunity counts and pipeline values between systems. In this <a href='{{root}}work/hubspot-to-gohighlevel-migration.html'>HubSpot to GoHighLevel migration</a>, 607 opportunities across seven stages were reconciled before the switch.</p>" }
+    ],
+    "faqs": [
+      { "q": "Can email history be migrated?", "a": "Full email history usually can't be moved one-to-one. Export what you need for records and keep HubSpot read-only for a period if required." },
+      { "q": "How long does the migration take?", "a": "For a small business, typically one to three weeks depending on data volume and the number of workflows to rebuild." }
+    ]
+  }
+]

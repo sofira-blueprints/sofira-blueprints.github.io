@@ -1,0 +1,113 @@
+<!--meta
+title: SPF, DKIM and DMARC Explained: Email Deliverability Checklist | Sofira Blueprints
+description: What SPF, DKIM and DMARC are, how to set them up for Klaviyo, HubSpot, Mailchimp or GoHighLevel, what Gmail, Yahoo and Outlook require from bulk senders, and the list habits that keep you in the inbox.
+nav: blog
+ogtype: article
+-->
+<!--head-->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"SPF, DKIM and DMARC explained: the email deliverability checklist","description":"How to authenticate your sending domain and keep emails out of spam.","image":"{{site}}/assets/brand/og-image.jpg","datePublished":"2026-11-03","dateModified":"{{today}}","author":{"@type":"Person","name":"Sofiat Adedeji","url":"{{site}}/about.html"},"publisher":{"@id":"{{site}}/#business"},"mainEntityOfPage":"{{canonical}}","keywords":"SPF, DKIM, DMARC, email deliverability, bulk sender requirements, spam"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is the difference between SPF, DKIM and DMARC?","acceptedAnswer":{"@type":"Answer","text":"SPF lists the servers allowed to send email for your domain. DKIM adds a cryptographic signature proving the message wasn't altered and was authorised by your domain. DMARC tells mailbox providers what to do when a message fails those checks and sends you reports about who is sending as your domain."}},
+{"@type":"Question","name":"Do I need DMARC if I only send a newsletter?","acceptedAnswer":{"@type":"Answer","text":"Yes. Gmail and Yahoo require a DMARC record from bulk senders, and having one improves trust for every sender. Start with a monitoring policy (p=none) and tighten it once your reports show all legitimate sources are aligned."}},
+{"@type":"Question","name":"Why are my emails going to spam even with SPF and DKIM?","acceptedAnswer":{"@type":"Answer","text":"Authentication proves who you are, not that people want your email. Low engagement, sending to old or purchased lists, high complaint rates, sudden volume spikes and spammy content can all still push emails to spam."}}
+]}
+</script>
+<!--/head-->
+<article class="article container">
+  <header class="article__head">
+    <ol class="crumbs"><li><a href="{{root}}index.html">Home</a></li><li><a href="{{root}}blog.html">Blog</a></li><li aria-current="page">Deliverability</li></ol>
+    <p class="eyebrow" style="margin-top:1.4rem">Deliverability</p>
+    <h1 data-split>SPF, DKIM and DMARC explained: <em>the email deliverability checklist</em></h1>
+    <div class="article__meta" data-reveal>
+      <span class="author"><img src="{{root}}assets/img/sofiat-adedeji.webp" alt="" width="38" height="38">Sofiat Adedeji</span>
+      <span>Updated <time datetime="2026-11-03">3 Nov 2026</time></span><span>8 min read</span>
+    </div>
+    <div class="answer-box" data-reveal>
+      <span class="mono">Quick answer</span>
+      <p><strong>SPF</strong> says which servers may send for your domain, <strong>DKIM</strong> signs each email so it can't be forged or altered, and <strong>DMARC</strong> tells inboxes what to do when a message fails and reports back to you. All three are DNS records, and Gmail, Yahoo and Outlook now expect bulk senders to have them, alongside low spam complaint rates and one-click unsubscribe.</p>
+    </div>
+  </header>
+
+  <div class="article__layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#why">Why deliverability matters</a></li>
+        <li><a href="#spf">SPF</a></li>
+        <li><a href="#dkim">DKIM</a></li>
+        <li><a href="#dmarc">DMARC</a></li>
+        <li><a href="#requirements">Mailbox provider rules</a></li>
+        <li><a href="#checklist">The checklist</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </nav>
+    <div class="article__body">
+      <h2 id="why">Why deliverability matters more than open rates</h2>
+      <p>You can write the perfect email, design a beautiful template and build flawless automation, and still earn nothing if the message lands in spam. Deliverability is the foundation everything else stands on. It depends on two things: <strong>authentication</strong> (proving you are who you say you are) and <strong>reputation</strong> (showing that people want your emails).</p>
+
+      <h2 id="spf">SPF: who is allowed to send</h2>
+      <p>Sender Policy Framework is a TXT record on your domain that lists the services allowed to send email on your behalf, such as Google Workspace, your email platform or your CRM.</p>
+      <ul>
+        <li>You can have <strong>only one SPF record</strong> per domain. Combine services into a single record rather than adding a second one.</li>
+        <li>SPF has a limit of <strong>10 DNS lookups</strong>. Too many "include" statements cause it to fail silently.</li>
+        <li>End with <code>~all</code> (soft fail) or <code>-all</code> (hard fail) once you're confident the list is complete.</li>
+      </ul>
+
+      <h2 id="dkim">DKIM: proof the message is genuine</h2>
+      <p>DomainKeys Identified Mail adds a digital signature to every email. Your platform holds a private key and publishes the matching public key in your DNS (usually as CNAME or TXT records it gives you). Receiving servers check the signature to confirm the email really came from your domain and wasn't changed in transit.</p>
+      <p>Most platforms (Klaviyo, HubSpot, Mailchimp, MailerLite, ActiveCampaign, GoHighLevel and others) ask you to set up a <strong>branded sending domain</strong> so DKIM signs with <em>your</em> domain rather than theirs. This step is often skipped, and it's one of the biggest wins available.</p>
+
+      <h2 id="dmarc">DMARC: the policy and the reports</h2>
+      <p>DMARC ties SPF and DKIM together. It checks that the domain in your visible "From" address <strong>aligns</strong> with the domain that passed SPF or DKIM, then applies your policy:</p>
+      <table>
+        <thead><tr><th>Policy</th><th>What happens</th><th>When to use it</th></tr></thead>
+        <tbody>
+          <tr><td><code>p=none</code></td><td>Monitor only; nothing is blocked</td><td>Start here and read the reports</td></tr>
+          <tr><td><code>p=quarantine</code></td><td>Failing mail goes to spam</td><td>Once all legitimate senders pass</td></tr>
+          <tr><td><code>p=reject</code></td><td>Failing mail is refused</td><td>Maximum protection against spoofing</td></tr>
+        </tbody>
+      </table>
+      <p>A simple starting record looks like <code>v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com</code>. The <code>rua</code> address receives aggregate reports showing every service sending as your domain, which is invaluable for spotting forgotten tools or spoofing.</p>
+
+      <h2 id="requirements">What Gmail, Yahoo and Outlook expect from bulk senders</h2>
+      <p>Since 2024, Gmail and Yahoo have required senders of large volumes (roughly 5,000+ messages a day to their users) to meet stricter rules, and Microsoft has introduced similar requirements for Outlook.com. In practice, every serious sender should meet them:</p>
+      <ul>
+        <li>SPF and DKIM set up, with a DMARC record (at least <code>p=none</code>) and alignment with the From domain.</li>
+        <li><strong>One-click unsubscribe</strong> in marketing emails, honoured quickly.</li>
+        <li>A <strong>spam complaint rate kept well below 0.3%</strong>, ideally under 0.1%, as reported in tools like Google Postmaster Tools.</li>
+        <li>Valid forward and reverse DNS for sending IPs (your platform handles this on shared infrastructure).</li>
+      </ul>
+
+      <h2 id="checklist">The Sofira deliverability checklist</h2>
+      <ol>
+        <li>Set up a branded sending domain in your email platform and CRM.</li>
+        <li>Publish one combined SPF record and stay under 10 lookups.</li>
+        <li>Enable DKIM for every service that sends as your domain.</li>
+        <li>Publish DMARC at <code>p=none</code>, collect reports for 2–4 weeks, then tighten.</li>
+        <li>Register with Google Postmaster Tools to monitor reputation and complaints.</li>
+        <li>Use double opt-in or confirmed consent for new subscribers; never buy lists.</li>
+        <li>Run a <a href="{{root}}work/klaviyo-winback-reengagement.html">re-engagement and sunset flow</a> to remove inactive contacts.</li>
+        <li>Increase volume gradually on new domains or after long pauses.</li>
+        <li>Keep cold outreach on <strong>separate domains</strong> from your main marketing domain.</li>
+        <li>Check every campaign for broken links, oversized images and spammy phrasing before sending.</li>
+      </ol>
+
+      <h2 id="faq">FAQ</h2>
+      <h3>What's the difference between SPF, DKIM and DMARC?</h3>
+      <p>SPF lists approved senders, DKIM signs each message, and DMARC sets the policy for failures and sends you reports about who's using your domain.</p>
+      <h3>Do I need DMARC if I only send a newsletter?</h3>
+      <p>Yes. It's expected by major mailbox providers and it protects your brand from spoofing. Start with monitoring and tighten later.</p>
+      <h3>Why do my emails go to spam even with SPF and DKIM?</h3>
+      <p>Authentication proves identity, not desirability. Low engagement, old or purchased lists, complaints and sudden volume spikes can still hurt placement. Clean lists and relevant content matter as much as DNS.</p>
+
+      <div class="callout" style="margin-top:2.4rem"><strong>Not sure your emails are reaching the inbox?</strong>I audit authentication, reputation and list health across Klaviyo, HubSpot, Mailchimp, GoHighLevel and more, then fix what's broken. <a href="{{root}}contact.html#book">Book a free deliverability audit</a>.</div>
+      <div class="author-box">
+        <img src="{{root}}assets/img/sofiat-adedeji.webp" alt="Sofiat Adedeji" width="76" height="76" loading="lazy">
+        <div><strong>Sofiat Adedeji</strong><p>Email deliverability and CRM automation specialist at Sofira Blueprints.</p></div>
+      </div>
+    </div>
+  </div>
+</article>

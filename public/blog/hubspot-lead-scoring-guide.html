@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HubSpot lead scoring: how to tell sales who to call first | Sofira Blueprints</title>
+<meta name="description" content="A simple, explainable lead scoring model using fit and engagement, plus the workflows that turn scores into action.">
+<link rel="canonical" href="https://sofira-blueprints.github.io/blog/hubspot-lead-scoring-guide.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sofira Blueprints">
+<meta property="og:title" content="HubSpot lead scoring: how to tell sales who to call first | Sofira Blueprints">
+<meta property="og:description" content="A simple, explainable lead scoring model using fit and engagement, plus the workflows that turn scores into action.">
+<meta property="og:url" content="https://sofira-blueprints.github.io/blog/hubspot-lead-scoring-guide.html">
+<meta property="og:image" content="https://sofira-blueprints.github.io/assets/work/hubspot-crm-contact-timeline-interface.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HubSpot lead scoring: how to tell sales who to call first | Sofira Blueprints">
+<meta name="twitter:description" content="A simple, explainable lead scoring model using fit and engagement, plus the workflows that turn scores into action.">
+<meta name="twitter:image" content="https://sofira-blueprints.github.io/assets/work/hubspot-crm-contact-timeline-interface.jpg">
+<meta name="theme-color" content="#0A1430" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F6F4EE" media="(prefers-color-scheme: light)">
+<meta name="author" content="Sofiat Adedeji">
+<link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM summary" href="../llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+  /* Theme before paint: saved choice > system preference */
+  (function () {
+    var t = null; try { t = localStorage.getItem("sb-theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", t);
+    document.documentElement.classList.add("js");
+    /* Logo intro: once per browser session, skipped for reduced motion */
+    try {
+      if (!sessionStorage.getItem("sb-intro") && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        sessionStorage.setItem("sb-intro", "1");
+        document.documentElement.classList.add("intro-on");
+        setTimeout(function () { document.documentElement.classList.remove("intro-on"); }, 3100);
+      }
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sofira-blueprints.github.io/#business",
+      "name": "Sofira Blueprints",
+      "alternateName": "Sofira Blueprints — Email Marketing & CRM Automation",
+      "url": "https://sofira-blueprints.github.io/",
+      "logo": "https://sofira-blueprints.github.io/assets/brand/sofira-logo.svg",
+      "image": "https://sofira-blueprints.github.io/assets/brand/og-image.jpg",
+      "description": "Sofira Blueprints designs and builds email marketing and CRM automation systems for e-commerce brands, coaches, SaaS, IT and B2B companies and agencies, using Klaviyo, HubSpot, GoHighLevel, Mailchimp, MailerLite, ActiveCampaign, Keap, Kit, GetResponse, Zapier and Make.",
+      "email": "sofirablueprints@gmail.com",
+      "telephone": "+2347012432052",
+      "founder": { "@id": "https://sofira-blueprints.github.io/#sofiat" },
+      "areaServed": "Worldwide",
+      "knowsAbout": ["Email marketing", "CRM automation", "Marketing automation", "Klaviyo", "HubSpot", "GoHighLevel", "Mailchimp", "MailerLite", "ActiveCampaign", "Keap", "Kit (ConvertKit)", "GetResponse", "Zapier", "Make", "Email deliverability", "SPF DKIM DMARC", "A2P 10DLC", "Lead nurturing", "Customer retention"],
+      "sameAs": ["https://www.linkedin.com/in/sofiat-adedeji", "https://www.upwork.com/freelancers/~0162b85931825cee3c"],
+      "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "sofirablueprints@gmail.com", "telephone": "+2347012432052", "availableLanguage": ["English", "Spanish", "French", "Japanese"] }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://sofira-blueprints.github.io/#sofiat",
+      "name": "Sofiat Adedeji",
+      "jobTitle": "Email Marketing & CRM Automation Specialist",
+      "worksFor": { "@id": "https://sofira-blueprints.github.io/#business" },
+      "image": "https://sofira-blueprints.github.io/assets/img/sofiat-adedeji.webp",
+      "url": "https://sofira-blueprints.github.io/about.html",
+      "sameAs": ["https://www.linkedin.com/in/sofiat-adedeji", "https://www.upwork.com/freelancers/~0162b85931825cee3c"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sofira-blueprints.github.io/#website",
+      "url": "https://sofira-blueprints.github.io/",
+      "name": "Sofira Blueprints",
+      "publisher": { "@id": "https://sofira-blueprints.github.io/#business" },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">{"image":"https://sofira-blueprints.github.io/assets/work/hubspot-crm-contact-timeline-interface.jpg","datePublished":"2026-09-16","description":"A simple, explainable lead scoring model using fit and engagement, plus the workflows that turn scores into action.","@type":"BlogPosting","dateModified":"2026-11-17","headline":"HubSpot lead scoring: how to tell sales who to call first","author":{"url":"https://sofira-blueprints.github.io/about.html","name":"Sofiat Adedeji","@type":"Person"},"@context":"https://schema.org","mainEntityOfPage":"https://sofira-blueprints.github.io/blog/hubspot-lead-scoring-guide.html","publisher":{"url":"https://sofira-blueprints.github.io/","name":"Sofira Blueprints","logo":{"@type":"ImageObject","url":"https://sofira-blueprints.github.io/assets/brand/icon-512.png"},"@type":"Organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","mainEntity":[{"acceptedAnswer":{"text":"Scoring features vary by HubSpot tier and change over time. Check your plan; simpler scoring can also be done with properties and workflows.","@type":"Answer"},"name":"Do I need HubSpot Professional for lead scoring?","@type":"Question"},{"acceptedAnswer":{"text":"There is no universal number. Start with a threshold that produces a manageable number of leads for sales and refine it using conversion data.","@type":"Answer"},"name":"What is a good MQL threshold?","@type":"Question"}],"@type":"FAQPage"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","itemListElement":[{"position":1,"name":"Home","item":"https://sofira-blueprints.github.io/","@type":"ListItem"},{"position":2,"name":"Blog","item":"https://sofira-blueprints.github.io/blog.html","@type":"ListItem"},{"position":3,"name":"HubSpot lead scoring: how to tell sales who to call first","item":"https://sofira-blueprints.github.io/blog/hubspot-lead-scoring-guide.html","@type":"ListItem"}],"@type":"BreadcrumbList"}</script>
+</head>
+<body data-page="blog">
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="logo-mark" viewBox="0 0 48 48">
+    <rect x="1.5" y="1.5" width="45" height="45" rx="13" style="fill:var(--logo-bg);stroke:var(--logo-edge);stroke-width:1.5"/>
+    <path d="M7 15.5h3.5M7 32.5h3.5M37.5 15.5H41M37.5 32.5H41" style="stroke:var(--gold);stroke-width:1.6;stroke-linecap:round;opacity:.7"/>
+    <path class="lm-s" d="M31 13.5h-9.5a5.25 5.25 0 0 0 0 10.5h5a5.25 5.25 0 0 1 0 10.5H17" style="fill:none;stroke:var(--logo-ink);stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round"/>
+    <circle cx="31" cy="13.5" r="3.1" style="fill:var(--gold)"/>
+    <circle cx="17" cy="34.5" r="3.1" style="fill:var(--logo-bg);stroke:var(--gold);stroke-width:2"/>
+  </symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+  <symbol id="i-cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M2.5 12h3M18.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V3h9l9 9-9 9-9-9z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 3v4M17 5h4"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h9.6a1 1 0 0 0 1-.8L21 7H6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1.2-.4-2.6-1.8-3-3l1-1-1-2z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+  <symbol id="i-upwork" viewBox="0 0 24 24"><path d="M3 6v5a4 4 0 0 0 8 0V6M11 10c1.2 4 3 6.5 6 6.5a4 4 0 0 0 0-8c-3 0-4.5 3-5.5 6.5L10 21"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro__inner">
+    <svg class="intro__mark" viewBox="0 0 48 48">
+      <rect class="im-bg" x="1.5" y="1.5" width="45" height="45" rx="13"/>
+      <path class="im-t" d="M7 15.5h3.5M7 32.5h3.5M37.5 15.5H41M37.5 32.5H41"/>
+      <path class="im-s" d="M31 13.5h-9.5a5.25 5.25 0 0 0 0 10.5h5a5.25 5.25 0 0 1 0 10.5H17"/>
+      <circle class="im-a" cx="31" cy="13.5" r="3.1"/>
+      <circle class="im-b" cx="17" cy="34.5" r="3.1"/>
+    </svg>
+    <p class="intro__word">Sofira<small>Blueprints</small></p>
+  </div>
+</div>
+<div class="progress-bar" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html" aria-label="Sofira Blueprints, home">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span class="brand__word"><b>Sofira</b><small>Blueprints</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a href="../index.html" data-nav="home">Home</a></li>
+        <li><a href="../services.html" data-nav="services">Services</a></li>
+        <li><a href="../work.html" data-nav="work">Case Studies</a></li>
+        <li><a href="../about.html" data-nav="about">About</a></li>
+        <li><a href="../blog.html" data-nav="blog" aria-current="page">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark mode" data-theme-toggle>
+        <svg class="i-sun"><use href="#i-sun"/></svg><svg class="i-moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn--gold btn--sm" href="../contact.html#book" data-nav="contact"><span>Book a free audit</span></a>
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="i-open"><use href="#i-menu"/></svg><svg class="i-shut"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <div class="container">
+    <ul class="mobile-menu__list">
+      <li><a href="../index.html" data-nav="home"><span class="mono">01</span>Home</a></li>
+      <li><a href="../services.html" data-nav="services"><span class="mono">02</span>Services</a></li>
+      <li><a href="../work.html" data-nav="work"><span class="mono">03</span>Case Studies</a></li>
+      <li><a href="../about.html" data-nav="about"><span class="mono">04</span>About</a></li>
+      <li><a href="../blog.html" data-nav="blog" aria-current="page"><span class="mono">05</span>Blog</a></li>
+      <li><a href="../contact.html" data-nav="contact"><span class="mono">06</span>Contact</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:sofirablueprints@gmail.com">sofirablueprints@gmail.com</a>
+      <a href="https://wa.me/2347012432052" target="_blank" rel="noopener">WhatsApp +234 701 243 2052</a>
+    </div>
+  </div>
+</div>
+<main id="main">
+
+<article class="article container">
+  <header class="article__head">
+    <ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../blog.html">Blog</a></li><li aria-current="page">HubSpot</li></ol>
+    <p class="eyebrow" style="margin-top:1.4rem">HubSpot</p>
+    <h1>HubSpot lead scoring: how to tell sales who to call first</h1>
+    <div class="article__meta">
+      <span class="author"><img src="../assets/img/sofiat-adedeji.webp" alt="" width="38" height="38">Sofiat Adedeji</span>
+      <span>Updated <time datetime="2026-09-16">16 Sep 2026</time></span><span>6 min read</span>
+    </div>
+    <figure class="article-cover" data-reveal><img src="../assets/work/hubspot-crm-contact-timeline-interface.jpg" alt="HubSpot lead scoring: how to tell sales who to call first" width="1600" height="900" fetchpriority="high"></figure>
+    <div class="answer-box" data-reveal>
+      <span class="mono">Quick answer</span>
+      <p>Score leads on two things: fit (do they match your ideal customer?) and engagement (are they showing interest?). Keep the model simple enough for sales to understand, set a clear threshold for marketing-qualified leads and automate the handoff when it&#39;s reached.</p>
+    </div>
+  </header>
+  <div class="article__layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol><li><a href="#fit">Fit: are they the right kind of customer?</a></li><li><a href="#engagement">Engagement: are they interested now?</a></li><li><a href="#action">Turn scores into action</a></li><li><a href="#review">Review it with sales</a></li><li><a href="#faq">FAQ</a></li></ol>
+    </nav>
+    <div class="article__body">
+      <h2 id="fit">Fit: are they the right kind of customer?</h2><p>Add points for attributes that match your best customers: industry, company size, job title or country. Subtract points for poor fit, such as students or competitors. Fit tells you whether a lead is worth pursuing at all.</p>
+<h2 id="engagement">Engagement: are they interested now?</h2><p>Add points for actions that signal intent: visiting the pricing page, opening several emails, attending a webinar or requesting a demo. Let engagement points decay over time so a burst of activity months ago doesn't keep someone hot forever.</p>
+<h2 id="action">Turn scores into action</h2><p>When a contact passes your threshold, a workflow should update the lifecycle stage, assign an owner, create a task and notify sales. Without this step, scoring is just a number nobody looks at. See how lifecycle stages update automatically in the <a href='../work/hubspot-crm-lifecycle-tracking.html'>HubSpot CRM case study</a>.</p>
+<h2 id="review">Review it with sales</h2><p>Every quarter, look at which scored leads actually became customers. Adjust points with your sales team so the model reflects reality, not guesses.</p>
+      <h2 id="faq">FAQ</h2>
+      <h3>Do I need HubSpot Professional for lead scoring?</h3><p>Scoring features vary by HubSpot tier and change over time. Check your plan; simpler scoring can also be done with properties and workflows.</p><h3>What is a good MQL threshold?</h3><p>There is no universal number. Start with a threshold that produces a manageable number of leads for sales and refine it using conversion data.</p>
+      <div class="callout" style="margin-top:2.4rem"><strong>Want this set up for you?</strong>I design, build and test email and CRM automation for e-commerce brands, coaches, SaaS and B2B teams. <a href="../contact.html#book">Book a free audit</a> and leave with a prioritised fix list, whether or not we work together.</div>
+      <div class="author-box">
+        <img src="../assets/img/sofiat-adedeji.webp" alt="Sofiat Adedeji" width="76" height="76" loading="lazy">
+        <div><strong>Sofiat Adedeji</strong><p>Founder of Sofira Blueprints. Certified Klaviyo Practitioner and GoHighLevel Expert, Top Rated on Upwork with a 100% Job Success Score.</p></div>
+      </div>
+    </div>
+  </div>
+</article>
+<section class="related section--alt">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div><p class="eyebrow">Keep reading</p><h2>Related guides</h2></div>
+      <a class="link-arrow" href="../blog.html">All articles <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="post-grid"><a class="post-card " href="../blog/hubspot-vs-gohighlevel-for-small-b2b.html" data-post-cat="crm" data-search="hubspot vs gohighlevel: which crm fits a small b2b business or agency? an honest comparison of features, pricing models, automation and who each platform suits best. crm" data-reveal>
+  <div class="post-card__art post-card__art--img"><img class="post-card__img" src="../assets/work/hubspot-to-gohighlevel-migration.jpg" alt="" width="1600" height="780" loading="lazy" decoding="async"><span class="post-card__tag">CRM</span></div>
+  <div class="post-card__body"><span class="post-card__date">27 Oct 2026 &middot; 8 min read</span><h3>HubSpot vs GoHighLevel: which CRM fits a small B2B business or agency?</h3><p>An honest comparison of features, pricing models, automation and who each platform suits best.</p><span class="link-arrow">Read article <svg><use href="#i-arrow"/></svg></span></div>
+</a><a class="post-card " href="../blog/crm-migration-checklist.html" data-post-cat="crm" data-search="the crm migration checklist: switch platforms without losing data a 10-step plan for moving contacts, deals and automations, with the reconciliation step most teams skip. crm" data-reveal>
+  <div class="post-card__art post-card__art--img"><img class="post-card__img" src="../assets/work/mailchimp-list-migration-qa.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="post-card__tag">CRM</span></div>
+  <div class="post-card__body"><span class="post-card__date">20 Oct 2026 &middot; 7 min read</span><h3>The CRM migration checklist: switch platforms without losing data</h3><p>A 10-step plan for moving contacts, deals and automations, with the reconciliation step most teams skip.</p><span class="link-arrow">Read article <svg><use href="#i-arrow"/></svg></span></div>
+</a><a class="post-card " href="../blog/gohighlevel-review-request-automation.html" data-post-cat="crm" data-search="how to automate google review requests in gohighlevel build a review request workflow that triggers after every completed job, follows up politely and keeps unhappy feedback private. gohighlevel" data-reveal>
+  <div class="post-card__art post-card__art--img"><img class="post-card__img" src="../assets/work/gohighlevel-customer-feedback-review-automation.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async"><span class="post-card__tag">GoHighLevel</span></div>
+  <div class="post-card__body"><span class="post-card__date">26 Sep 2026 &middot; 6 min read</span><h3>How to automate Google review requests in GoHighLevel</h3><p>Build a review request workflow that triggers after every completed job, follows up politely and keeps unhappy feedback private.</p><span class="link-arrow">Read article <svg><use href="#i-arrow"/></svg></span></div>
+</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <a class="brand brand--lg" href="../index.html" aria-label="Sofira Blueprints, home" style="color:var(--on-deep)">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true"><use href="#logo-mark"/></svg>
+          <span class="brand__word"><b>Sofira</b><small>Blueprints</small></span>
+        </a>
+        <p>Email marketing and CRM automation by Sofiat Adedeji: systems that follow up with every lead and bring customers back.</p>
+        <form class="mini-form" data-subscribe novalidate>
+          <label for="footer-email" class="mini-form__label">Get one practical automation tip, twice a month.</label>
+          <div class="mini-form__row">
+            <input id="footer-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            <input type="text" name="company_website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn--gold btn--sm" type="submit"><span>Subscribe</span></button>
+          </div>
+          <p class="mini-form__msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <h3 class="footer-col__title">Explore</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../work.html">Case Studies</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h3 class="footer-col__title">Services</h3>
+        <ul>
+          <li><a href="../services.html#email-flows">Email flows &amp; campaigns</a></li>
+          <li><a href="../services.html#crm">CRM setup &amp; automation</a></li>
+          <li><a href="../services.html#migration">CRM migration</a></li>
+          <li><a href="../services.html#deliverability">Deliverability</a></li>
+          <li><a href="../services.html#integrations">Zapier &amp; Make</a></li>
+          <li><a href="../services.html#funnels">Funnels &amp; pages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-col__title">Get in touch</h3>
+        <ul class="footer-contact">
+          <li><a href="mailto:sofirablueprints@gmail.com"><svg><use href="#i-mail"/></svg>sofirablueprints@gmail.com</a></li>
+          <li><a href="https://wa.me/2347012432052" target="_blank" rel="noopener"><svg><use href="#i-whatsapp"/></svg>WhatsApp +234 701 243 2052</a></li>
+          <li><a href="tel:+2347012432052"><svg><use href="#i-phone"/></svg>Call +234 701 243 2052</a></li>
+          <li><a href="https://www.linkedin.com/in/sofiat-adedeji" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~0162b85931825cee3c" target="_blank" rel="noopener"><svg><use href="#i-upwork"/></svg>Upwork (Top Rated)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Sofira Blueprints. All rights reserved.</p>
+      <p class="footer-clock"><svg><use href="#i-globe"/></svg>Working with clients worldwide &middot; Mon&ndash;Fri</p>
+      <a class="to-top" href="#top">Back to top <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/2347012432052?text=Hi%20Sofiat%2C%20I%27d%20like%20to%20talk%20about%20email%20%26%20CRM%20automation." target="_blank" rel="noopener" aria-label="Chat with Sofiat on WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/site.js" defer></script>
+
+</body>
+</html>

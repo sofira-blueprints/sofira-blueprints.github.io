@@ -1,0 +1,46 @@
+<!--head-->
+<script type="application/ld+json">{{p.ld}}</script>
+<script type="application/ld+json">{{p.faqld}}</script>
+<script type="application/ld+json">{{p.breadcrumb}}</script>
+<!--/head-->
+<article class="article container">
+  <header class="article__head">
+    <ol class="crumbs"><li><a href="{{root}}index.html">Home</a></li><li><a href="{{root}}blog.html">Blog</a></li><li aria-current="page">{{p.label}}</li></ol>
+    <p class="eyebrow" style="margin-top:1.4rem">{{p.label}}</p>
+    <h1>{{p.title}}</h1>
+    <div class="article__meta">
+      <span class="author"><img src="{{root}}assets/img/sofiat-adedeji.webp" alt="" width="38" height="38">Sofiat Adedeji</span>
+      <span>Updated <time datetime="{{p.date}}">{{p.dateText}}</time></span><span>{{p.read}} min read</span>
+    </div>
+    <figure class="article-cover" data-reveal><img src="{{root}}{{p.image}}" alt="{{p.imageAlt}}" width="{{p.w}}" height="{{p.h}}" fetchpriority="high"></figure>
+    <div class="answer-box" data-reveal>
+      <span class="mono">Quick answer</span>
+      <p>{{p.answer}}</p>
+    </div>
+  </header>
+  <div class="article__layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>{{p.toc}}</ol>
+    </nav>
+    <div class="article__body">
+      {{p.body}}
+      <h2 id="faq">FAQ</h2>
+      {{p.faqs}}
+      <div class="callout" style="margin-top:2.4rem"><strong>Want this set up for you?</strong>I design, build and test email and CRM automation for e-commerce brands, coaches, SaaS and B2B teams. <a href="{{root}}contact.html#book">Book a free audit</a> and leave with a prioritised fix list, whether or not we work together.</div>
+      <div class="author-box">
+        <img src="{{root}}assets/img/sofiat-adedeji.webp" alt="Sofiat Adedeji" width="76" height="76" loading="lazy">
+        <div><strong>Sofiat Adedeji</strong><p>Founder of Sofira Blueprints. Certified Klaviyo Practitioner and GoHighLevel Expert, Top Rated on Upwork with a 100% Job Success Score.</p></div>
+      </div>
+    </div>
+  </div>
+</article>
+<section class="related section--alt">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div><p class="eyebrow">Keep reading</p><h2>Related guides</h2></div>
+      <a class="link-arrow" href="{{root}}blog.html">All articles <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="post-grid">{{p.related}}</div>
+  </div>
+</section>

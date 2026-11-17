@@ -1,0 +1,70 @@
+<meta name="theme-color" content="#0A1430" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F6F4EE" media="(prefers-color-scheme: light)">
+<meta name="author" content="Sofiat Adedeji">
+<link rel="icon" href="{{root}}assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{root}}assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="{{root}}site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM summary" href="{{root}}llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="{{root}}assets/css/site.css">
+<script>
+  /* Theme before paint: saved choice > system preference */
+  (function () {
+    var t = null; try { t = localStorage.getItem("sb-theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", t);
+    document.documentElement.classList.add("js");
+    /* Logo intro: once per browser session, skipped for reduced motion */
+    try {
+      if (!sessionStorage.getItem("sb-intro") && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        sessionStorage.setItem("sb-intro", "1");
+        document.documentElement.classList.add("intro-on");
+        setTimeout(function () { document.documentElement.classList.remove("intro-on"); }, 3100);
+      }
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "{{site}}/#business",
+      "name": "Sofira Blueprints",
+      "alternateName": "Sofira Blueprints — Email Marketing & CRM Automation",
+      "url": "{{site}}/",
+      "logo": "{{site}}/assets/brand/sofira-logo.svg",
+      "image": "{{site}}/assets/brand/og-image.jpg",
+      "description": "Sofira Blueprints designs and builds email marketing and CRM automation systems for e-commerce brands, coaches, SaaS, IT and B2B companies and agencies, using Klaviyo, HubSpot, GoHighLevel, Mailchimp, MailerLite, ActiveCampaign, Keap, Kit, GetResponse, Zapier and Make.",
+      "email": "sofirablueprints@gmail.com",
+      "telephone": "+2347012432052",
+      "founder": { "@id": "{{site}}/#sofiat" },
+      "areaServed": "Worldwide",
+      "knowsAbout": ["Email marketing", "CRM automation", "Marketing automation", "Klaviyo", "HubSpot", "GoHighLevel", "Mailchimp", "MailerLite", "ActiveCampaign", "Keap", "Kit (ConvertKit)", "GetResponse", "Zapier", "Make", "Email deliverability", "SPF DKIM DMARC", "A2P 10DLC", "Lead nurturing", "Customer retention"],
+      "sameAs": ["https://www.linkedin.com/in/sofiat-adedeji", "https://www.upwork.com/freelancers/~0162b85931825cee3c"],
+      "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "sofirablueprints@gmail.com", "telephone": "+2347012432052", "availableLanguage": ["English", "Spanish", "French", "Japanese"] }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{site}}/#sofiat",
+      "name": "Sofiat Adedeji",
+      "jobTitle": "Email Marketing & CRM Automation Specialist",
+      "worksFor": { "@id": "{{site}}/#business" },
+      "image": "{{site}}/assets/img/sofiat-adedeji.webp",
+      "url": "{{site}}/about.html",
+      "sameAs": ["https://www.linkedin.com/in/sofiat-adedeji", "https://www.upwork.com/freelancers/~0162b85931825cee3c"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{site}}/#website",
+      "url": "{{site}}/",
+      "name": "Sofira Blueprints",
+      "publisher": { "@id": "{{site}}/#business" },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>

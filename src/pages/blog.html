@@ -1,0 +1,52 @@
+<!--meta
+title: Blog: Email Marketing, CRM & Automation Guides | Sofira Blueprints
+description: Practical, step-by-step guides on Klaviyo flows, HubSpot and GoHighLevel CRM, Zapier and Make integrations, email deliverability, funnels and lead nurturing, written from real client builds.
+nav: blog
+-->
+<!--head-->
+<script type="application/ld+json">{{post_ld}}</script>
+<!--/head-->
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">The blog</p>
+    <h1>Practical guides to <em>email, CRM and automation.</em></h1>
+    <p class="lede">{{post_count}} step-by-step articles written from real client builds: what to set up, how to set it up and the mistakes to avoid. No fluff, no jargon.</p>
+  </div>
+</section>
+
+<section class="container" style="padding-bottom:var(--fs-hero)">
+  {{post_featured}}
+
+  <div class="blog-tools">
+    <div class="tabs" role="group" aria-label="Filter articles by topic">
+      <button class="tab" type="button" data-post-tab="all" aria-pressed="true">All</button>
+      <button class="tab" type="button" data-post-tab="email" aria-pressed="false">Email marketing</button>
+      <button class="tab" type="button" data-post-tab="crm" aria-pressed="false">CRM</button>
+      <button class="tab" type="button" data-post-tab="automation" aria-pressed="false">Automation</button>
+      <button class="tab" type="button" data-post-tab="deliverability" aria-pressed="false">Deliverability</button>
+      <button class="tab" type="button" data-post-tab="funnels" aria-pressed="false">Funnels</button>
+    </div>
+    <label class="search"><span class="visually-hidden">Search articles</span><svg><use href="#i-search"/></svg><input type="search" placeholder="Search articles…" data-post-search></label>
+  </div>
+
+  <div class="post-grid" data-post-grid>
+    {{post_cards}}
+  </div>
+  <p class="empty" data-post-empty hidden>No articles match that search yet. <a href="contact.html#message">Ask me your question directly</a>.</p>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <img src="assets/img/sofiat-adedeji.webp" alt="" width="120" height="120" loading="lazy">
+      <div>
+        <h2>Rather have it done <em>for you?</em></h2>
+        <p>Book a free audit and I&rsquo;ll show you exactly which of these fixes will make the biggest difference to your business.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--gold btn--lg" href="contact.html#book"><span>Book a free audit</span><svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>

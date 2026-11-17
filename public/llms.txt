@@ -1,0 +1,30 @@
+# Sofira Blueprints
+
+> Sofira Blueprints is the email marketing and CRM automation practice of Sofiat Adedeji, a Top Rated freelancer on Upwork with a 100% Job Success Score, working with clients worldwide. Sofira Blueprints designs, builds and tests automation that follows up with every lead and brings customers back, for e-commerce brands, coaches and creators, SaaS companies, IT and B2B businesses, and agencies.
+
+## Services
+- Email flows and campaigns: welcome series, abandoned cart and checkout, browse abandonment, post-purchase, win-back, sunset flows and newsletters (Klaviyo, Mailchimp, MailerLite, ActiveCampaign, Kit/ConvertKit, GetResponse, Keap)
+- CRM setup and automation: pipelines, lifecycle stages, lead scoring, lead nurturing, review requests, missed-call text-back (HubSpot, GoHighLevel, Keap, ActiveCampaign, Zoho)
+- CRM and email platform migration with field mapping, consent checks and reconciliation
+- Email deliverability: SPF, DKIM, DMARC, sending domains, list cleaning; SMS compliance and A2P 10DLC registration
+- Zapier and Make integrations, including Shopify, Calendly, Google Workspace, Slack and Stripe
+- Funnels and landing pages (Systeme.io, GoHighLevel), cold email outreach (Instantly) and AI employees (GoHighLevel Voice AI and Conversation AI)
+
+## Credentials
+- Upwork: Top Rated, 100% Job Success Score, identity verified
+- Certifications: Klaviyo Practitioner, GoHighLevel Expert, Advanced Email Marketing, Email Marketing, Digital Marketing
+- Languages: English (fluent), Spanish, French and Japanese (conversational)
+
+## Key pages
+- [Home](https://sofira-blueprints.github.io/): overview, services, process, featured work, reviews, FAQ
+- [Services](https://sofira-blueprints.github.io/services.html): eight services and engagement packages
+- [Case studies](https://sofira-blueprints.github.io/work.html): 30 email marketing, CRM and automation case studies with flows and results
+- [About](https://sofira-blueprints.github.io/about.html): background, certifications, specialisms
+- [Blog](https://sofira-blueprints.github.io/blog.html): guides on Klaviyo flows, deliverability, HubSpot vs GoHighLevel, CRM migration, A2P 10DLC and lead nurture
+- [Contact](https://sofira-blueprints.github.io/contact.html): book a free audit or discovery call in your own time zone
+
+## Contact
+- Email: sofirablueprints@gmail.com
+- WhatsApp / phone: +234 701 243 2052
+- LinkedIn: https://www.linkedin.com/in/sofiat-adedeji
+- Upwork: https://www.upwork.com/freelancers/~0162b85931825cee3c

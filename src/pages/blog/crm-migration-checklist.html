@@ -1,0 +1,69 @@
+<!--meta
+title: CRM Migration Checklist: Switch Platforms Without Losing Data | Sofira Blueprints
+description: A 10-step CRM and email platform migration checklist covering audit, field mapping, consent, pipelines, automation rebuilds, test imports, reconciliation and go-live, for HubSpot, GoHighLevel, Mailchimp, Klaviyo and more.
+nav: blog
+ogtype: article
+image: assets/work/mailchimp-list-migration-qa.jpg
+-->
+<!--head-->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to migrate a CRM without losing data","description":"A 10-step checklist for moving contacts, deals and automations between CRM or email platforms.","step":[
+{"@type":"HowToStep","position":1,"name":"Audit what you have"},{"@type":"HowToStep","position":2,"name":"Decide what not to move"},{"@type":"HowToStep","position":3,"name":"Map fields and properties"},{"@type":"HowToStep","position":4,"name":"Check consent"},{"@type":"HowToStep","position":5,"name":"Rebuild pipelines"},{"@type":"HowToStep","position":6,"name":"Run a test import"},{"@type":"HowToStep","position":7,"name":"Migrate in the right order"},{"@type":"HowToStep","position":8,"name":"Rebuild automations"},{"@type":"HowToStep","position":9,"name":"Reconcile"},{"@type":"HowToStep","position":10,"name":"Go live and freeze the old system"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"The CRM migration checklist: switch platforms without losing data","image":"{{site}}/assets/work/mailchimp-list-migration-qa.jpg","datePublished":"2026-10-20","dateModified":"{{today}}","author":{"@type":"Person","name":"Sofiat Adedeji","url":"{{site}}/about.html"},"publisher":{"@id":"{{site}}/#business"},"mainEntityOfPage":"{{canonical}}"}
+</script>
+<!--/head-->
+<article class="article container">
+  <header class="article__head">
+    <ol class="crumbs"><li><a href="{{root}}index.html">Home</a></li><li><a href="{{root}}blog.html">Blog</a></li><li aria-current="page">CRM migration</li></ol>
+    <p class="eyebrow" style="margin-top:1.4rem">CRM</p>
+    <h1 data-split>The CRM migration checklist: <em>switch platforms without losing data</em></h1>
+    <div class="article__meta" data-reveal>
+      <span class="author"><img src="{{root}}assets/img/sofiat-adedeji.webp" alt="" width="38" height="38">Sofiat Adedeji</span>
+      <span>Updated <time datetime="2026-10-20">20 Oct 2026</time></span><span>7 min read</span>
+    </div>
+    <div class="answer-box" data-reveal>
+      <span class="mono">Quick answer</span>
+      <p>A safe CRM migration follows ten steps: <strong>audit</strong>, <strong>decide what not to move</strong>, <strong>map fields</strong>, <strong>check consent</strong>, <strong>rebuild pipelines</strong>, <strong>test import</strong>, <strong>migrate in order</strong> (companies, contacts, deals, activity), <strong>rebuild automations</strong>, <strong>reconcile counts and values</strong>, then <strong>go live</strong> and freeze the old system.</p>
+    </div>
+  </header>
+  <div class="article__layout">
+    <nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#why">Why migrations go wrong</a></li><li><a href="#steps">The 10 steps</a></li><li><a href="#consent">A note on consent</a></li><li><a href="#timeline">Typical timeline</a></li></ol></nav>
+    <div class="article__body">
+      <h2 id="why">Why migrations go wrong</h2>
+      <p>Most migration problems don't come from the import tool. They come from skipped planning: fields that didn't map, duplicates that multiplied, deals that lost their stage, automations nobody remembered existed and contacts who never consented to marketing. The fix is a boring, thorough checklist, and boring is exactly what you want when your revenue data is moving.</p>
+
+      <h2 id="steps">The 10-step checklist</h2>
+      <h3>1. Audit what you have</h3>
+      <p>Export a list of every object (contacts, companies, deals, tickets), every custom property, every pipeline and stage, every active workflow and every integration. Note record counts: you'll need them for reconciliation.</p>
+      <h3>2. Decide what <em>not</em> to move</h3>
+      <p>Migration is the best clean-up opportunity you'll get. Leave behind hard bounces, long-unengaged contacts, test records and unused properties.</p>
+      <h3>3. Map fields and properties</h3>
+      <p>Build a mapping sheet: old field, new field, type and transformation (for example, splitting a "Full name" into first and last name). Agree on picklist values before importing.</p>
+      <h3>4. Check consent</h3>
+      <p>Bring across subscription status and consent source. Where consent is unclear, plan a <a href="{{root}}work/mailchimp-permission-list-migration.html">permission-based re-opt-in journey</a> rather than mailing everyone.</p>
+      <h3>5. Rebuild pipelines and stages</h3>
+      <p>Recreate pipelines in the new platform first, so deals have somewhere to land with the right stage, value and owner.</p>
+      <h3>6. Run a test import</h3>
+      <p>Import a small sample (50–100 records) and check every field, association and date. It's far cheaper to fix the mapping now than after 20,000 records are in.</p>
+      <h3>7. Migrate in the right order</h3>
+      <p>Usually: users/owners, then companies, then contacts, then deals or opportunities, then notes and activity. Associations depend on the earlier objects existing.</p>
+      <h3>8. Rebuild automations</h3>
+      <p>Workflows rarely transfer between platforms. Rebuild them using your audit list, and improve them while you're there. Keep them switched off until go-live.</p>
+      <h3>9. Reconcile</h3>
+      <p>Compare record counts, pipeline totals and deal values between old and new. In my <a href="{{root}}work/hubspot-to-gohighlevel-migration.html">HubSpot to GoHighLevel migration</a>, 607 opportunities were reconciled stage by stage before anything was switched off.</p>
+      <h3>10. Go live and freeze the old system</h3>
+      <p>Switch forms and integrations to the new platform, turn on automations, set the old CRM to read-only and keep a full export archived.</p>
+
+      <h2 id="consent">A note on consent and compliance</h2>
+      <p>Moving contacts to a new email platform doesn't reset their consent. Many platforms' terms of service prohibit importing contacts who didn't opt in, and doing so can damage your sender reputation quickly. When in doubt, re-permission.</p>
+
+      <h2 id="timeline">Typical timeline</h2>
+      <p>A small business migration (a few thousand contacts, one pipeline, a handful of workflows) typically takes one to two weeks. Larger or multi-pipeline migrations take two to four weeks, mostly spent on mapping and testing.</p>
+
+      <div class="callout" style="margin-top:2.4rem"><strong>Planning a move?</strong>I migrate between HubSpot, GoHighLevel, Mailchimp, Klaviyo, ActiveCampaign, Keap and more, with mapping, consent checks and reconciliation included. <a href="{{root}}contact.html#book">Book a free migration call</a>.</div>
+      <div class="author-box"><img src="{{root}}assets/img/sofiat-adedeji.webp" alt="Sofiat Adedeji" width="76" height="76" loading="lazy"><div><strong>Sofiat Adedeji</strong><p>CRM migration and automation specialist at Sofira Blueprints.</p></div></div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,5 @@
+# Private notes and local tooling (not for the public repository)
+CONTENT-REVIEW.md
+.claude/
+Thumbs.db
+desktop.ini

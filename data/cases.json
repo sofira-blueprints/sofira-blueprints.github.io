@@ -1,0 +1,938 @@
+[
+  {
+    "slug": "hubspot-lead-nurture-funnel",
+    "title": "End-to-End Lead Nurture Funnel in HubSpot",
+    "category": "crm",
+    "featured": true,
+    "client": "B2B services company",
+    "industry": "B2B / Professional services",
+    "platforms": ["HubSpot"],
+    "services": ["Workflow automation", "Lead nurturing", "Sales handoff"],
+    "summary": "A hands-free HubSpot workflow that thanks every new lead, waits, reads their behaviour and either nurtures them or hands them to sales with a task already created.",
+    "challenge": "Leads were downloading resources and filling in forms, then hearing nothing for days. Sales had no signal for who was warm, so follow-up depended on someone remembering to check the CRM.",
+    "approach": "I mapped the buyer journey from first form fill to opportunity and turned it into a single enrolment-triggered workflow. A two-day delay gives the lead time to explore, then an if/then branch checks page views. Engaged contacts trigger a follow-up task for sales; quieter contacts get a value-first email instead of a hard pitch. A workflow goal of 'Opportunity created' lets the team measure the funnel instead of guessing.",
+    "steps": [
+      { "t": "trigger", "label": "Contact fills out any form" },
+      { "t": "email", "label": "Thanks for downloading" },
+      { "t": "wait", "label": "Delay for 2 days" },
+      { "t": "branch", "label": "Has at least one page view?" },
+      { "t": "action", "label": "Yes: create follow-up task for sales" },
+      { "t": "email", "label": "No: 'Here's something for you' value email" },
+      { "t": "goal", "label": "Opportunity created" }
+    ],
+    "deliverables": ["Enrolment trigger and re-enrolment rules", "2 nurture emails (copy + design)", "Behaviour-based if/then branch", "Automatic sales task creation", "Workflow goal and reporting view"],
+    "results": [
+      { "value": "100%", "label": "of form fills followed up automatically" },
+      { "value": "2-day", "label": "smart delay before the behaviour check" },
+      { "value": "0", "label": "leads relying on manual follow-up" }
+    ],
+    "outcome": "Every lead now gets a timely, relevant touchpoint, and sales only spends time on contacts who have shown real interest. The goal metric gives leadership a clear view of how many leads become opportunities.",
+    "images": [
+      { "src": "assets/work/hubspot-lead-nurture-funnel-automation.jpg", "alt": "HubSpot workflow: form submission trigger, thank-you email, 2-day delay, page-view branch, sales task and opportunity goal" }
+    ]
+  },
+  {
+    "slug": "hubspot-marketing-automation-audit",
+    "title": "HubSpot Marketing Automation Audit & Optimisation",
+    "category": "crm",
+    "featured": false,
+    "client": "Growing B2B marketing team",
+    "industry": "B2B / SaaS",
+    "platforms": ["HubSpot"],
+    "services": ["Automation audit", "Workflow optimisation", "List hygiene"],
+    "summary": "A full health check of a HubSpot portal: workflows, segmentation, email engagement, integrations and deliverability, scored and turned into a prioritised action plan.",
+    "challenge": "The team had built workflows over several years. Some were underperforming, several lists hadn't been used in months, open rates were below industry average and UTM tracking was missing from key emails, so nobody could say which automations actually drove revenue.",
+    "approach": "I scored the portal across five areas (workflow performance, list and segmentation, email engagement, integration and data, deliverability) and benchmarked every active workflow by enrolment and conversion rate. Each finding was logged with its impact and a due date so fixes could be rolled out in order of value, not effort.",
+    "steps": [
+      { "t": "crm", "label": "Inventory every active workflow" },
+      { "t": "branch", "label": "Converting below 5%?" },
+      { "t": "action", "label": "Rebuild, merge or retire" },
+      { "t": "tag", "label": "Clean or re-engage 7 inactive lists" },
+      { "t": "webhook", "label": "Add UTM tracking to email links" },
+      { "t": "goal", "label": "Prioritised 30-day action plan" }
+    ],
+    "deliverables": ["Automation health score (0-100) with breakdown", "Workflow performance league table", "Findings log: 3 underperforming workflows, 7 inactive lists, 4 tracking gaps", "Recommended actions with owners and due dates", "Follow-up audit scheduled"],
+    "results": [
+      { "value": "72/100", "label": "baseline automation health score" },
+      { "value": "9,842", "label": "emails analysed in the audit window" },
+      { "value": "5", "label": "prioritised fixes in the action plan" },
+      { "value": "85%", "label": "deliverability health (kept as a strength)" }
+    ],
+    "outcome": "The team got a clear, ranked list of what to fix first, starting with the 'New Lead Nurture' workflow and inactive segments, plus a recurring audit date so the portal stays healthy instead of drifting again.",
+    "images": [
+      { "src": "assets/work/hubspot-marketing-automation-audit-optimization.jpg", "alt": "HubSpot marketing automation audit dashboard with a 72/100 health score, key findings and recommended actions" }
+    ]
+  },
+  {
+    "slug": "hubspot-winter-campaign-workflow",
+    "title": "Segmented Winter Campaign Workflow in HubSpot",
+    "category": "email",
+    "featured": false,
+    "client": "Product company selling in the US, Canada and UK",
+    "industry": "E-commerce / Consumer products",
+    "platforms": ["HubSpot"],
+    "services": ["Segmentation", "Seasonal campaign", "Workflow automation"],
+    "summary": "A seasonal welcome series aimed at a tightly defined active list: engaged leads in three countries who signed up for the winter offer but hadn't bought yet.",
+    "challenge": "Seasonal promotions were going to the whole database, which diluted results and risked unsubscribes from people who had already bought or had gone cold.",
+    "approach": "I built an active list with five criteria (lifecycle stage, last email interaction date, the winter sign-up form, country, and no purchase in the last 60 days), then attached a workflow: a winter welcome email, a three-day pause and a click-based branch. Clickers receive a product guide; non-clickers get a gentle reminder. Everyone who completes the journey is added to a static list for retargeting and reporting.",
+    "steps": [
+      { "t": "trigger", "label": "Added to 'Winter campaign - Engaged'" },
+      { "t": "email", "label": "Winter welcome email" },
+      { "t": "wait", "label": "Delay 3 days" },
+      { "t": "branch", "label": "Clicked a link in the email?" },
+      { "t": "email", "label": "Yes: product guide / No: reminder" },
+      { "t": "tag", "label": "Add to static list for reporting" }
+    ],
+    "deliverables": ["5-criteria active list", "3 campaign emails", "Click-based branching", "Static list for retargeting and reporting"],
+    "results": [
+      { "value": "356", "label": "high-intent contacts in the target segment" },
+      { "value": "5", "label": "list criteria to keep the audience precise" },
+      { "value": "2", "label": "personalised paths based on behaviour" }
+    ],
+    "outcome": "The promotion reached only the people most likely to buy, with messaging that adapted to how they engaged, which protected list health while concentrating effort where it converts.",
+    "images": [
+      { "src": "assets/work/winter-campaign-crm-workflow-dashboard.jpg", "alt": "HubSpot contact list criteria and the Winter Campaign welcome-series workflow with an if/then branch" }
+    ]
+  },
+  {
+    "slug": "hubspot-crm-lifecycle-tracking",
+    "title": "HubSpot CRM Setup: Lifecycle Stages & Contact Timeline",
+    "category": "crm",
+    "featured": false,
+    "client": "Digital agency",
+    "industry": "Agencies",
+    "platforms": ["HubSpot"],
+    "services": ["CRM setup", "Lifecycle stages", "Pipeline configuration"],
+    "summary": "A clean HubSpot CRM where every email, form, meeting and note sits on one timeline, and lifecycle stages update themselves as leads engage.",
+    "challenge": "Contact history was spread across inboxes and spreadsheets. When a lead booked a call, the person taking it had no context, and lifecycle stages were rarely updated, so reporting was unreliable.",
+    "approach": "I configured lifecycle stages and lead statuses with automatic updates (for example, a contact-us form moves a lead to Marketing Qualified Lead), associated contacts with companies and deals, connected email and meetings, and set up list memberships for newsletter subscribers and MQLs so marketing and sales see the same truth.",
+    "steps": [
+      { "t": "trigger", "label": "Contact Us form submitted" },
+      { "t": "crm", "label": "Lifecycle stage set to MQL" },
+      { "t": "email", "label": "Instant 'Thanks for reaching out'" },
+      { "t": "action", "label": "Intro call logged with notes" },
+      { "t": "crm", "label": "Deal created in sales pipeline" },
+      { "t": "goal", "label": "Proposal follow-up task" }
+    ],
+    "deliverables": ["Lifecycle stage and lead status model", "Contact, company and deal associations", "Email and meeting logging", "Smart lists for MQLs and subscribers", "Team training notes"],
+    "results": [
+      { "value": "1", "label": "timeline for every touchpoint" },
+      { "value": "Auto", "label": "lifecycle updates, no manual edits" },
+      { "value": "360°", "label": "view across contacts, companies and deals" }
+    ],
+    "outcome": "Anyone on the team can open a contact and understand the full relationship in seconds, and reports on MQLs and deals finally reflect reality.",
+    "images": [
+      { "src": "assets/work/hubspot-crm-contact-timeline-interface.jpg", "alt": "HubSpot contact record showing the activity timeline, lifecycle stage, associated company and open deal" }
+    ]
+  },
+  {
+    "slug": "hubspot-monthly-newsletter",
+    "title": "Monthly Newsletter Program in HubSpot",
+    "category": "email",
+    "featured": true,
+    "client": "B2B software company",
+    "industry": "SaaS / Technology",
+    "platforms": ["HubSpot"],
+    "services": ["Newsletter strategy", "Email design", "Copywriting", "Reporting"],
+    "summary": "A reusable, on-brand monthly newsletter, from subject line and preview text to template and send, that keeps customers informed and engaged.",
+    "challenge": "The company's updates went out irregularly in plain, inconsistent formats. Open rates varied from month to month and there was no template the team could reuse quickly.",
+    "approach": "I designed a modular newsletter template with a hero, 'What's New' section and resource blocks, wrote subject lines and preview text that create curiosity without clickbait, personalised the greeting, set the reply-to so customers could answer directly, and added a footer with preferences and unsubscribe for compliance.",
+    "steps": [
+      { "t": "crm", "label": "Segment: all marketing contacts" },
+      { "t": "email", "label": "Subject + preview text tested" },
+      { "t": "page", "label": "Modular, mobile-first template" },
+      { "t": "action", "label": "Schedule at best send time" },
+      { "t": "goal", "label": "Track opens, clicks, replies" }
+    ],
+    "deliverables": ["Reusable newsletter template", "Monthly content structure", "Subject line and preview text formulas", "Performance reporting"],
+    "results": [
+      { "value": "42.2%", "label": "open rate" },
+      { "value": "12.5%", "label": "click rate" },
+      { "value": "97.8%", "label": "delivered" },
+      { "value": "0.7%", "label": "unsubscribe rate" }
+    ],
+    "outcome": "The newsletter became a dependable monthly touchpoint, and the template means each new issue takes a fraction of the time to produce.",
+    "images": [
+      { "src": "assets/work/hubspot-newsletter.jpg", "alt": "HubSpot newsletter performance: 582 sent, 42.2% open rate, 12.5% click rate" },
+      { "src": "assets/work/hubspot-newsletter-2.jpg", "alt": "HubSpot email editor with the monthly newsletter template" },
+      { "src": "assets/work/after-hubspot-newsletter.jpg", "alt": "Final monthly newsletter design with hero image and What's New section" }
+    ]
+  },
+  {
+    "slug": "wellness-newsletter-hubspot",
+    "title": "Wellness Brand Newsletter Campaign",
+    "category": "email",
+    "featured": false,
+    "client": "Wellness and nutrition brand",
+    "industry": "Health & wellness",
+    "platforms": ["HubSpot"],
+    "services": ["Campaign design", "Copywriting", "Send optimisation"],
+    "summary": "A calm, conversion-focused October newsletter for a wellness brand, mixing nutrition tips, a product spotlight and a community note.",
+    "challenge": "The brand wanted to sell without sounding salesy. Previous emails were product-heavy and engagement was slipping.",
+    "approach": "I structured the issue around value first: a headline promise ('Small changes make a big difference'), three short sections and a single clear CTA to the full guide. Imagery and colour matched the brand's natural look, and the send went to a clean, opted-in list.",
+    "steps": [
+      { "t": "crm", "label": "Opted-in wellness newsletter list" },
+      { "t": "email", "label": "Value-first issue: tips + spotlight" },
+      { "t": "action", "label": "Single CTA: read the full guide" },
+      { "t": "goal", "label": "Engagement and click tracking" }
+    ],
+    "deliverables": ["Newsletter design", "Copy and subject line", "List selection", "Post-send performance report"],
+    "results": [
+      { "value": "99.0%", "label": "delivered" },
+      { "value": "34.9%", "label": "open rate" },
+      { "value": "10.3%", "label": "click rate" },
+      { "value": "1,248", "label": "subscribers reached" }
+    ],
+    "outcome": "A double-digit click rate showed the value-first format works for this audience. The structure is now the brand's go-to newsletter layout.",
+    "images": [
+      { "src": "assets/work/wellness-newsletter-campaign-editor.jpg", "alt": "Wellness Co. newsletter in the HubSpot editor with 34.9% opens and 10.3% clicks" }
+    ]
+  },
+  {
+    "slug": "facebook-lead-ads-to-hubspot",
+    "title": "Facebook Lead Ads → HubSpot Real-Time Lead Capture",
+    "category": "automation",
+    "featured": false,
+    "client": "Lead-generation business",
+    "industry": "B2B / Local services",
+    "platforms": ["HubSpot", "Facebook Lead Ads"],
+    "services": ["Integration", "Lead routing", "Email follow-up"],
+    "summary": "Facebook Lead Ads connected directly to HubSpot so every new lead is created, tagged, assigned and emailed within seconds of submitting the form.",
+    "challenge": "Leads were being downloaded from Facebook as CSV files once or twice a day. By the time someone followed up, the lead had often gone cold or been contacted by a competitor.",
+    "approach": "I connected Facebook Lead Ads to HubSpot so leads sync in real time, mapped every form field to the right contact properties (including campaign source), set lead status and owner automatically, and triggered an instant confirmation email plus an internal notification. Test submissions verified every field before launch.",
+    "steps": [
+      { "t": "trigger", "label": "New Facebook lead form submission" },
+      { "t": "webhook", "label": "Real-time sync to HubSpot" },
+      { "t": "crm", "label": "Create contact + map campaign source" },
+      { "t": "action", "label": "Assign owner, set lead status" },
+      { "t": "email", "label": "Instant confirmation email" },
+      { "t": "goal", "label": "Sales notified to call" }
+    ],
+    "deliverables": ["Lead Ads to HubSpot connection", "Field and source mapping", "Lead assignment rules", "Instant follow-up email", "End-to-end QA with test leads"],
+    "results": [
+      { "value": "Seconds", "label": "from ad form to CRM (was hours)" },
+      { "value": "100%", "label": "of fields mapped and verified" },
+      { "value": "0", "label": "manual CSV imports" }
+    ],
+    "outcome": "Speed-to-lead went from hours to seconds, and attribution data now travels with every contact so the team can see which ads produce real customers.",
+    "images": []
+  },
+  {
+    "slug": "klaviyo-ecommerce-newsletter",
+    "title": "Klaviyo E-commerce Newsletter for a Home Décor Brand",
+    "category": "email",
+    "featured": false,
+    "client": "Home furniture and décor store",
+    "industry": "E-commerce",
+    "platforms": ["Klaviyo", "Shopify"],
+    "services": ["Email design", "Product blocks", "Campaign build"],
+    "summary": "A premium, image-led Klaviyo template for new-arrival launches, with dynamic product blocks that pull straight from the store catalogue.",
+    "challenge": "The store's campaigns looked generic next to its beautiful website, and building each one by hand took hours.",
+    "approach": "I designed a modular Klaviyo template that matches the brand: an editorial hero ('Refresh your space'), a curated 'Shop our favourites' product grid using catalogue blocks, and a lifestyle footer story. Every block is reusable so the team can launch new collections in minutes.",
+    "steps": [
+      { "t": "trigger", "label": "New collection goes live" },
+      { "t": "email", "label": "Editorial hero + CTA" },
+      { "t": "cart", "label": "Dynamic product grid from catalogue" },
+      { "t": "action", "label": "Segment-based send" },
+      { "t": "goal", "label": "Placed order (attributed)" }
+    ],
+    "deliverables": ["Branded master template", "Dynamic product blocks", "Saved reusable sections", "Launch campaign build and QA"],
+    "results": [
+      { "value": "Minutes", "label": "to build each new launch email" },
+      { "value": "1", "label": "master template for every collection" },
+      { "value": "100%", "label": "mobile-optimised layout" }
+    ],
+    "outcome": "Campaigns now look as premium as the products, and the team can respond to new stock or trends the same day.",
+    "images": [
+      { "src": "assets/work/klaviyo-ecommerce-newsletter-editor-preview.jpg", "alt": "Klaviyo editor showing the LuxeHome new arrivals email with product grid" }
+    ]
+  },
+  {
+    "slug": "klaviyo-signup-forms-segmentation",
+    "title": "Klaviyo Pop-Up Forms & Preference-Based Segmentation",
+    "category": "email",
+    "featured": false,
+    "client": "Shopify fashion and lifestyle store",
+    "industry": "E-commerce",
+    "platforms": ["Klaviyo", "Shopify"],
+    "services": ["List growth", "Signup forms", "Segmentation"],
+    "summary": "High-converting Klaviyo signup forms with interest checkboxes, so every new subscriber lands in the right segment from day one.",
+    "challenge": "The store's single generic pop-up captured few emails and told the brand nothing about what subscribers wanted, so every campaign went to everyone.",
+    "approach": "I designed a two-step pop-up (offer first, email second) with timing and exit-intent rules, added preference checkboxes stored as profile properties, and built segments from those answers. A welcome flow delivers the discount and adapts content to each subscriber's interests.",
+    "steps": [
+      { "t": "trigger", "label": "Visitor shows exit intent or scrolls 40%" },
+      { "t": "page", "label": "Two-step pop-up with offer" },
+      { "t": "branch", "label": "Which interests were ticked?" },
+      { "t": "tag", "label": "Auto-segment by preference" },
+      { "t": "email", "label": "Welcome email with code" },
+      { "t": "goal", "label": "First purchase" }
+    ],
+    "deliverables": ["Desktop and mobile pop-ups", "Targeting and frequency rules", "Preference profile properties", "Interest-based segments", "Welcome offer delivery"],
+    "results": [
+      { "value": "2-step", "label": "form designed to lift sign-ups" },
+      { "value": "Day 1", "label": "segmentation for every new subscriber" },
+      { "value": "Auto", "label": "discount delivery, no manual work" }
+    ],
+    "outcome": "List growth became a system rather than a hope, and campaigns can now be targeted by interest instead of sending the same message to everyone.",
+    "images": []
+  },
+  {
+    "slug": "klaviyo-welcome-series",
+    "title": "Klaviyo Welcome Series & Customer Journey Flow",
+    "category": "email",
+    "featured": false,
+    "client": "Direct-to-consumer beauty brand",
+    "industry": "E-commerce",
+    "platforms": ["Klaviyo", "Shopify"],
+    "services": ["Flow strategy", "Copywriting", "Conditional splits"],
+    "summary": "A Klaviyo welcome flow that introduces the brand, builds trust with social proof and nudges first-time buyers, then exits the moment they purchase.",
+    "challenge": "New subscribers received a single discount email and then nothing. Many never bought, and the ones who did were still being sent 'first order' reminders.",
+    "approach": "I built a multi-email welcome series with timed delays: brand story and offer, best-sellers and reviews, then a last-chance reminder. A conditional split checks 'Placed Order' before every email so customers exit as soon as they convert and move into post-purchase messaging.",
+    "steps": [
+      { "t": "trigger", "label": "Subscribed to list" },
+      { "t": "email", "label": "Welcome + brand story + offer" },
+      { "t": "wait", "label": "Wait 2 days" },
+      { "t": "branch", "label": "Placed order since starting?" },
+      { "t": "email", "label": "No: best-sellers + reviews" },
+      { "t": "email", "label": "No: last-chance reminder" },
+      { "t": "goal", "label": "Yes: exit to post-purchase flow" }
+    ],
+    "deliverables": ["Flow map and timing", "Email copy and design", "Conditional splits and filters", "Smart sending and UTM tracking", "Flow QA with test profiles"],
+    "results": [
+      { "value": "24/7", "label": "automated first-purchase journey" },
+      { "value": "0", "label": "discount reminders sent to buyers" },
+      { "value": "Always-on", "label": "revenue from new subscribers" }
+    ],
+    "outcome": "Every subscriber now gets a thoughtful introduction to the brand, and buyers immediately move to the right next step instead of receiving irrelevant offers.",
+    "images": []
+  },
+  {
+    "slug": "klaviyo-winback-reengagement",
+    "title": "Klaviyo Re-Engagement & Customer Win-Back Automation",
+    "category": "email",
+    "featured": false,
+    "client": "Online store with a large dormant list",
+    "industry": "E-commerce",
+    "platforms": ["Klaviyo"],
+    "services": ["Win-back flow", "List hygiene", "Deliverability"],
+    "summary": "A win-back flow that tries to reactivate lapsed customers with personalised offers, then quietly suppresses those who stay inactive to protect inbox placement.",
+    "challenge": "Thousands of subscribers hadn't opened in months. Mailing them dragged down engagement and risked spam-folder placement for the whole list.",
+    "approach": "I defined 'lapsed' by purchase and engagement windows, then built a three-step sequence: a 'we miss you' note, a personalised offer and a final 'stay subscribed?' choice. Anyone who re-engages is tagged and returned to the main list; anyone who doesn't is suppressed automatically.",
+    "steps": [
+      { "t": "trigger", "label": "No purchase or open in 90 days" },
+      { "t": "email", "label": "'We miss you' with new arrivals" },
+      { "t": "wait", "label": "Wait 4 days" },
+      { "t": "email", "label": "Personalised win-back offer" },
+      { "t": "branch", "label": "Opened, clicked or purchased?" },
+      { "t": "tag", "label": "Yes: re-engaged / No: suppress" }
+    ],
+    "deliverables": ["Lapsed customer segment definitions", "3-email win-back sequence", "Auto-suppression of unengaged profiles", "Engagement reporting"],
+    "results": [
+      { "value": "Auto", "label": "list cleaning on a rolling basis" },
+      { "value": "3", "label": "chances to win back each customer" },
+      { "value": "Healthier", "label": "sender reputation and inbox placement" }
+    ],
+    "outcome": "Revenue comes back from customers who were drifting away, and the list stays clean without anyone exporting spreadsheets.",
+    "images": []
+  },
+  {
+    "slug": "mailchimp-reengagement-deliverability",
+    "title": "Mailchimp Re-Engagement & Deliverability Journey",
+    "category": "deliverability",
+    "featured": false,
+    "client": "Membership and education business",
+    "industry": "Coaches / Education",
+    "platforms": ["Mailchimp"],
+    "services": ["Customer journey", "Tagging", "Deliverability"],
+    "summary": "A Mailchimp customer journey that separates engaged from unengaged subscribers and gives inactive contacts a final chance before they are removed from sends.",
+    "challenge": "Low open rates were hurting deliverability and the account was paying for contacts who never read anything.",
+    "approach": "I built a journey for the 'Inactive Subscribers' audience: a 'We miss you!' email, a seven-day wait, then a branch based on engagement. Engaged contacts are tagged and receive a 'We've saved something for you' email; unengaged contacts receive a last-chance message and are tagged for removal.",
+    "steps": [
+      { "t": "trigger", "label": "Contact added to Inactive Subscribers" },
+      { "t": "email", "label": "'We miss you!'" },
+      { "t": "wait", "label": "Wait 7 days" },
+      { "t": "branch", "label": "Engaged with the email?" },
+      { "t": "tag", "label": "Tag Engaged / Unengaged" },
+      { "t": "email", "label": "Saved offer or last-chance email" },
+      { "t": "goal", "label": "End of journey" }
+    ],
+    "deliverables": ["Inactive audience definition", "Mailchimp customer journey", "Engagement tags", "Removal rules for unengaged contacts"],
+    "results": [
+      { "value": "2", "label": "clear outcomes per contact: keep or remove" },
+      { "value": "Lower", "label": "cost per active subscriber" },
+      { "value": "Better", "label": "inbox placement for future campaigns" }
+    ],
+    "outcome": "The audience now only contains people who want the emails, which improves deliverability and reduces the monthly Mailchimp bill.",
+    "images": [
+      { "src": "assets/work/mailchimp-re-engagement.jpg", "alt": "Mailchimp re-engagement journey with a 7-day wait, engagement branch and tags" }
+    ]
+  },
+  {
+    "slug": "mailchimp-permission-list-migration",
+    "title": "Permission-Based List Migration & QA in Mailchimp",
+    "category": "deliverability",
+    "featured": false,
+    "client": "Business moving from a legacy email tool",
+    "industry": "B2B / Professional services",
+    "platforms": ["Mailchimp"],
+    "services": ["List migration", "Re-permission", "QA protocol"],
+    "summary": "A compliant migration of a legacy subscriber list into Mailchimp, with a re-permission journey so only consenting contacts receive marketing emails.",
+    "challenge": "The client had an old list with unclear consent history. Importing it directly would have risked spam complaints and account suspension.",
+    "approach": "I imported the legacy contacts into a holding audience and built a re-permission journey: a 'please confirm your subscription' email, a three-day wait and a check for the 'Yes, subscribe me' action. Confirmed contacts are tagged 'Migrated - Confirmed' and moved into the master audience; others never receive marketing sends. Every step went through a written QA checklist.",
+    "steps": [
+      { "t": "trigger", "label": "Legacy contact added to holding audience" },
+      { "t": "email", "label": "Please confirm your subscription" },
+      { "t": "wait", "label": "Wait 3 days" },
+      { "t": "branch", "label": "Clicked 'Yes, subscribe me'?" },
+      { "t": "tag", "label": "Tag 'Migrated - Confirmed'" },
+      { "t": "goal", "label": "Contact exits safely" }
+    ],
+    "deliverables": ["Migration plan and field mapping", "Re-permission journey", "Consent tags", "Written QA protocol", "Post-migration checklist"],
+    "results": [
+      { "value": "1,245", "label": "legacy contacts routed through re-permission" },
+      { "value": "100%", "label": "of marketing sends to confirmed contacts" },
+      { "value": "0", "label": "risky bulk imports" }
+    ],
+    "outcome": "The client moved platforms without putting their sender reputation at risk, and the new list is fully consent-based.",
+    "images": [
+      { "src": "assets/work/mailchimp-list-migration-qa.jpg", "alt": "Mailchimp permission-based list migration journey with confirmation email and tagging" }
+    ]
+  },
+  {
+    "slug": "mailerlite-b2b-newsletter",
+    "title": "MailerLite B2B Newsletter for a Consulting Firm",
+    "category": "email",
+    "featured": false,
+    "client": "Operations consulting firm",
+    "industry": "B2B / Consulting",
+    "platforms": ["MailerLite"],
+    "services": ["Email design", "B2B copywriting", "Lead generation"],
+    "summary": "A clean B2B email that positions a consulting firm's services and drives prospects to book a free consultation.",
+    "challenge": "The firm's emails read like brochures. Prospects didn't understand the offer quickly and few booked calls.",
+    "approach": "I restructured the email around one promise ('Smarter systems. Better business.'), three scannable service pillars (process optimisation, systems and tools, ongoing support), a client quote for credibility and one consultation CTA above the fold.",
+    "steps": [
+      { "t": "crm", "label": "B2B prospect segment" },
+      { "t": "email", "label": "Clear promise + 3 service pillars" },
+      { "t": "action", "label": "Social proof: client quote" },
+      { "t": "goal", "label": "Book a free consultation" }
+    ],
+    "deliverables": ["Email design in MailerLite", "B2B copywriting", "Reusable layout", "CTA tracking"],
+    "results": [
+      { "value": "1", "label": "focused CTA: book a consultation" },
+      { "value": "3", "label": "scannable service pillars" },
+      { "value": "Reusable", "label": "layout for future sends" }
+    ],
+    "outcome": "The firm now has a professional email format that explains its value in seconds and sends readers straight to a booking.",
+    "images": [
+      { "src": "assets/work/mailerlite-campaign-2.jpg", "alt": "MailerLite editor with the BrightPath Consulting newsletter and consultation CTA" }
+    ]
+  },
+  {
+    "slug": "mailerlite-ab-test-campaign",
+    "title": "MailerLite A/B-Tested Consultation Campaign",
+    "category": "email",
+    "featured": false,
+    "client": "Marketing agency",
+    "industry": "Agencies",
+    "platforms": ["MailerLite"],
+    "services": ["A/B testing", "Campaign build", "Copywriting"],
+    "summary": "An A/B-tested campaign that introduces an agency's services ('Let's simplify your marketing') and invites service businesses to book a consultation.",
+    "challenge": "The agency didn't know which message resonated with its audience, so campaigns were based on gut feeling.",
+    "approach": "I built the campaign with an A/B test on the subject line, a benefits row (more leads, smart automation, better results) and a reply-or-book CTA. The winning version is sent automatically to the rest of the list.",
+    "steps": [
+      { "t": "crm", "label": "All subscribers" },
+      { "t": "branch", "label": "A/B test subject lines" },
+      { "t": "email", "label": "Winner sent to remaining list" },
+      { "t": "goal", "label": "Replies and consultation bookings" }
+    ],
+    "deliverables": ["A/B test setup", "Email design and copy", "Sender and domain checks", "Results summary"],
+    "results": [
+      { "value": "A/B", "label": "tested subject lines" },
+      { "value": "Auto", "label": "winner distribution" },
+      { "value": "Data-led", "label": "messaging decisions" }
+    ],
+    "outcome": "The agency now learns from every send and has a proven subject-line style for future campaigns.",
+    "images": [
+      { "src": "assets/work/mailerlite-portfolio-2.jpg", "alt": "MailerLite A/B test campaign: Let's simplify your marketing" }
+    ]
+  },
+  {
+    "slug": "instantly-b2b-cold-outreach",
+    "title": "B2B Cold Outreach Sequence with Instantly",
+    "category": "ai",
+    "featured": true,
+    "client": "B2B services company",
+    "industry": "B2B / IT services",
+    "platforms": ["Instantly"],
+    "services": ["Cold email", "Sequence copywriting", "Deliverability setup"],
+    "summary": "A three-step Q4 cold email sequence to 5,800 B2B prospects, with sending schedules, warm domains and a follow-up campaign for engaged leads.",
+    "challenge": "The client needed predictable pipeline for Q4 but had never run cold email at scale and was worried about landing in spam.",
+    "approach": "I set up the sending infrastructure and schedule, wrote a short three-step sequence (initial email, 'any updates?' at day 3, 'happy to help' at day 6) and monitored opens, clicks, replies and unsubscribes daily. Engaged prospects were moved into a separate follow-up campaign.",
+    "steps": [
+      { "t": "trigger", "label": "5,800 verified B2B leads" },
+      { "t": "email", "label": "Step 1: 'Let's connect - Q4 opportunities'" },
+      { "t": "wait", "label": "3 days" },
+      { "t": "email", "label": "Step 2: 'Following up - any updates?'" },
+      { "t": "wait", "label": "3 days" },
+      { "t": "email", "label": "Step 3: 'Final follow up - happy to help'" },
+      { "t": "goal", "label": "Replies routed to sales" }
+    ],
+    "deliverables": ["Sending schedule and inbox setup", "3-step sequence copy", "Lead list upload and validation", "Daily monitoring", "Follow-up campaign for engaged leads"],
+    "results": [
+      { "value": "5,782", "label": "prospects contacted" },
+      { "value": "17.7%", "label": "open rate on cold traffic" },
+      { "value": "120", "label": "replies from step 1" },
+      { "value": "76.1%", "label": "open rate on the warm follow-up" }
+    ],
+    "outcome": "The client built a repeatable outbound engine with healthy unsubscribe rates and a steady stream of replies for the sales team.",
+    "images": [
+      { "src": "assets/work/instantly-cold-email-campaign-dashboard.jpg", "alt": "Instantly dashboard for Cold Outreach Q4 2025: 5,782 sent, 17.7% opened, 120 replied" },
+      { "src": "assets/work/email-campaign-performance-dashboard.jpg", "alt": "Instantly email campaign performance: 76.1% open rate and 16.6% click rate" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-outbound-tracking",
+    "title": "GoHighLevel Outbound Campaign Tracking & Optimisation",
+    "category": "ai",
+    "featured": false,
+    "client": "SaaS company",
+    "industry": "SaaS",
+    "platforms": ["GoHighLevel"],
+    "services": ["Outbound campaigns", "Reporting", "Optimisation"],
+    "summary": "A GoHighLevel command centre for five outbound campaigns, tracking sends, opens, clicks, replies and unsubscribes in one place.",
+    "challenge": "Outbound results were scattered across tools, so the team couldn't compare campaigns or decide which ones to scale.",
+    "approach": "I rebuilt the outbound sequences in GoHighLevel (cold outreach, follow-up, product demo, re-engagement and new leads), standardised naming and statuses, and set up a dashboard comparing every campaign on the same metrics.",
+    "steps": [
+      { "t": "trigger", "label": "New prospect added" },
+      { "t": "email", "label": "Outreach sequence" },
+      { "t": "branch", "label": "Replied?" },
+      { "t": "crm", "label": "Move to opportunity pipeline" },
+      { "t": "goal", "label": "Weekly optimisation review" }
+    ],
+    "deliverables": ["5 outbound campaigns", "Unified reporting dashboard", "Campaign status workflow", "Optimisation recommendations"],
+    "results": [
+      { "value": "1,248", "label": "emails sent in the period" },
+      { "value": "38.6%", "label": "open rate" },
+      { "value": "10.1%", "label": "click rate" },
+      { "value": "48", "label": "replies" }
+    ],
+    "outcome": "The team can see at a glance which campaign is winning and moves budget and effort accordingly.",
+    "images": [
+      { "src": "assets/work/outbound-campaign-performance-dashboard.jpg", "alt": "GoHighLevel outbound campaign tracking dashboard with five campaigns" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-review-automation",
+    "title": "GoHighLevel Customer Feedback & Review Automation",
+    "category": "crm",
+    "featured": true,
+    "client": "Home services company",
+    "industry": "Local services",
+    "platforms": ["GoHighLevel"],
+    "services": ["Reputation management", "Workflow automation", "Customer experience"],
+    "summary": "A GoHighLevel workflow that asks every happy customer for a review after a completed job, thanks those who leave one and follows up with those who don't.",
+    "challenge": "The business did great work but had few online reviews because asking was manual and easy to forget.",
+    "approach": "I triggered the workflow from the pipeline stage 'Closed Won' (appointment completed). After a one-day wait, an if/else branch checks whether a review was received. Reviewers get a thank-you; others get a polite reminder, a two-day wait, a final check-in, and a tag for team follow-up.",
+    "steps": [
+      { "t": "trigger", "label": "Appointment completed (Closed Won)" },
+      { "t": "email", "label": "Thanks for choosing us" },
+      { "t": "wait", "label": "Wait 1 day" },
+      { "t": "branch", "label": "Review received?" },
+      { "t": "email", "label": "No: friendly reminder, then check-in" },
+      { "t": "tag", "label": "Tag 'Review - Follow up'" },
+      { "t": "goal", "label": "Review received" }
+    ],
+    "deliverables": ["Review request workflow", "Thank-you and reminder emails", "If/else review check", "Follow-up tagging", "Reputation reporting"],
+    "results": [
+      { "value": "128", "label": "customers enrolled in 30 days" },
+      { "value": "69.5%", "label": "left a review (89 reviews)" },
+      { "value": "67.2%", "label": "workflow conversion rate" }
+    ],
+    "outcome": "Reviews now arrive on autopilot after every job, which builds local search visibility and trust without adding work for the team.",
+    "images": [
+      { "src": "assets/work/gohighlevel-customer-feedback-review-automation.jpg", "alt": "GoHighLevel customer feedback and review workflow with 89 reviews received from 128 enrolled" }
+    ]
+  },
+  {
+    "slug": "hubspot-to-gohighlevel-migration",
+    "title": "HubSpot to GoHighLevel Pipeline Migration",
+    "category": "crm",
+    "featured": false,
+    "client": "Agency serving home services and healthcare",
+    "industry": "Agencies",
+    "platforms": ["HubSpot", "GoHighLevel"],
+    "services": ["CRM migration", "Pipeline design", "Data mapping"],
+    "summary": "A full CRM migration from HubSpot to GoHighLevel, rebuilding the sales pipeline stage by stage and moving every open opportunity with its value and history.",
+    "challenge": "The agency wanted to consolidate tools in GoHighLevel but couldn't afford to lose deals, values or stage history during the move.",
+    "approach": "I audited the HubSpot pipeline, mapped stages and properties to GoHighLevel, rebuilt the seven stages (New Lead, Contacted, Qualified, Proposal Sent, Negotiation, Won, Lost), migrated opportunities with values and owners, then reconciled counts before switching off the old system.",
+    "steps": [
+      { "t": "crm", "label": "Audit HubSpot pipeline + properties" },
+      { "t": "action", "label": "Map stages and fields" },
+      { "t": "webhook", "label": "Migrate contacts and opportunities" },
+      { "t": "branch", "label": "Counts and values reconcile?" },
+      { "t": "goal", "label": "Go live in GoHighLevel" }
+    ],
+    "deliverables": ["Migration map", "7-stage GoHighLevel pipeline", "Opportunity and contact migration", "Reconciliation report", "Team walkthrough"],
+    "results": [
+      { "value": "607", "label": "opportunities migrated" },
+      { "value": "7", "label": "pipeline stages rebuilt" },
+      { "value": "0", "label": "deals lost in the move" }
+    ],
+    "outcome": "The agency now runs sales, marketing and messaging from one platform with its full deal history intact.",
+    "images": [
+      { "src": "assets/work/hubspot-to-gohighlevel-migration.jpg", "alt": "GoHighLevel pipeline board after the HubSpot migration showing seven stages" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-a2p-10dlc-compliance",
+    "title": "A2P 10DLC Brand & Campaign Registration in GoHighLevel",
+    "category": "deliverability",
+    "featured": false,
+    "client": "SMS-led sales team",
+    "industry": "Local services / Agencies",
+    "platforms": ["GoHighLevel"],
+    "services": ["A2P 10DLC", "SMS compliance", "Carrier registration"],
+    "summary": "End-to-end A2P 10DLC registration so the client's business texts are approved by US carriers and delivered, not filtered.",
+    "challenge": "Unregistered SMS was being filtered by carriers and the client had already had one registration rejected because of mismatched business details.",
+    "approach": "I aligned the legal business details exactly with official records, wrote compliant campaign use-case descriptions and sample messages, added opt-in and opt-out language, and tracked the brand and campaign through approval.",
+    "steps": [
+      { "t": "action", "label": "Verify legal business details" },
+      { "t": "page", "label": "Compliant opt-in and privacy language" },
+      { "t": "sms", "label": "Campaign use case + sample messages" },
+      { "t": "branch", "label": "Carrier review" },
+      { "t": "goal", "label": "Brand and campaign approved" }
+    ],
+    "deliverables": ["Brand registration", "Campaign registration", "Compliance copy and sample messages", "Approval tracking log"],
+    "results": [
+      { "value": "Approved", "label": "brand registration" },
+      { "value": "1/1", "label": "campaign approved" },
+      { "value": "0", "label": "rejections after resubmission" }
+    ],
+    "outcome": "The client's appointment reminders and follow-up texts now reach customers reliably and within carrier rules.",
+    "images": [
+      { "src": "assets/work/approved-a2p-10dlc-brand-campaign-compliance.jpg", "alt": "GoHighLevel A2P 10DLC brand compliance screen showing an approved brand and campaign" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-snapshot-handoff-qa",
+    "title": "Agency Snapshot Handoff & QA Documentation System",
+    "category": "crm",
+    "featured": false,
+    "client": "GoHighLevel agency",
+    "industry": "Agencies",
+    "platforms": ["GoHighLevel"],
+    "services": ["Snapshots", "QA process", "Client onboarding"],
+    "summary": "A repeatable handoff and QA system for a GoHighLevel agency, documenting every snapshot, workflow test and credential for each client account.",
+    "challenge": "Client accounts were being launched without consistent testing or documentation, which caused support tickets and slow onboarding.",
+    "approach": "I created a document centre inside the agency account with handoff docs and QA reports per client, statuses (draft, in review, completed), owners and dates, plus a standard QA checklist covering workflows, forms, calendars and messaging.",
+    "steps": [
+      { "t": "trigger", "label": "New client snapshot deployed" },
+      { "t": "action", "label": "Run standard QA checklist" },
+      { "t": "branch", "label": "All tests pass?" },
+      { "t": "page", "label": "Publish handoff document" },
+      { "t": "goal", "label": "Client signs off" }
+    ],
+    "deliverables": ["Handoff document template", "QA report template", "Status workflow", "Client-by-client documentation"],
+    "results": [
+      { "value": "18", "label": "handoff and QA documents organised" },
+      { "value": "4", "label": "client accounts documented end to end" },
+      { "value": "1", "label": "standard QA process for every launch" }
+    ],
+    "outcome": "Launches are now consistent and accountable, and new team members can support any client using the documentation.",
+    "images": [
+      { "src": "assets/work/agency-snapshot-handoff-qa-documentation.jpg", "alt": "GoHighLevel agency snapshot handoff and QA documentation list" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-attribution-tracking",
+    "title": "First-Click & Server-Side Attribution Tracking",
+    "category": "automation",
+    "featured": false,
+    "client": "Paid-ads-driven service business",
+    "industry": "Local services / E-commerce",
+    "platforms": ["GoHighLevel", "Google Ads", "Meta Ads"],
+    "services": ["Pixel setup", "Server-side tracking", "Attribution"],
+    "summary": "Meta, Google Ads and TikTok pixels plus server-side tracking in GoHighLevel, so every lead and sale is credited to the channel that produced it.",
+    "challenge": "Ad platforms and the CRM reported different numbers, and browser privacy changes meant many conversions weren't tracked at all.",
+    "approach": "I installed and verified the Meta, Google Ads and TikTok pixels, enabled server-side tracking on a custom domain, set the attribution model and a 30-day lookback window, and connected attribution to contact records so the CRM shows the source of every lead.",
+    "steps": [
+      { "t": "trigger", "label": "Visitor clicks an ad" },
+      { "t": "webhook", "label": "Pixels fire (Meta, Google, TikTok)" },
+      { "t": "action", "label": "Server-side event sent" },
+      { "t": "crm", "label": "Source saved on the contact" },
+      { "t": "goal", "label": "Attribution report by channel" }
+    ],
+    "deliverables": ["3 ad pixels installed and verified", "Server-side tracking configuration", "Attribution model and lookback window", "Attribution report"],
+    "results": [
+      { "value": "3", "label": "ad platforms tracked" },
+      { "value": "30-day", "label": "attribution lookback window" },
+      { "value": "Server-side", "label": "tracking for privacy-resilient data" }
+    ],
+    "outcome": "Marketing decisions are now based on which channels actually produce leads and customers, not on conflicting dashboards.",
+    "images": [
+      { "src": "assets/work/first-click-server-side-attribution-tracking-setup.jpg", "alt": "GoHighLevel tracking and attribution settings with Meta, Google Ads and TikTok pixels active" },
+      { "src": "assets/work/google-ads-campaigns-dashboard.jpg", "alt": "Google Ads campaigns dashboard used to reconcile attribution" },
+      { "src": "assets/work/meta-ads-manager-campaign-dashboard.jpg", "alt": "Meta Ads Manager campaign results used to reconcile attribution" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-voice-conversation-ai",
+    "title": "Voice AI & Conversation AI Employees in GoHighLevel",
+    "category": "ai",
+    "featured": false,
+    "client": "Service business with high inbound volume",
+    "industry": "Local services / Healthcare",
+    "platforms": ["GoHighLevel"],
+    "services": ["AI employees", "Prompt tuning", "Conversation design"],
+    "summary": "AI agents in GoHighLevel that qualify leads, book appointments, answer website chat and send payment reminders, calibrated session by session.",
+    "challenge": "The team couldn't answer every call and chat quickly, so leads waited or went elsewhere, especially after hours.",
+    "approach": "I configured five AI roles (voice lead qualifier, website chat assistant, appointment setter, support bot and payment reminder), then ran structured calibration sessions to tune prompts, response accuracy, interruption handling, knowledge updates and tone, logging every change and score.",
+    "steps": [
+      { "t": "trigger", "label": "Inbound call or website chat" },
+      { "t": "ai", "label": "AI qualifies and answers" },
+      { "t": "branch", "label": "Qualified and ready to book?" },
+      { "t": "action", "label": "Book on the calendar" },
+      { "t": "goal", "label": "Human handoff when needed" }
+    ],
+    "deliverables": ["5 AI employee configurations", "Prompt and knowledge-base tuning", "Calibration log with scores", "Fallbacks and human handoff rules"],
+    "results": [
+      { "value": "5", "label": "AI roles live" },
+      { "value": "Up to 93%", "label": "calibration score per session" },
+      { "value": "24/7", "label": "lead response and booking" }
+    ],
+    "outcome": "Every call and chat now gets an immediate, on-brand response, and qualified leads are booked straight into the calendar.",
+    "images": [
+      { "src": "assets/work/voice-ai-conversation.jpg", "alt": "GoHighLevel Voice AI and Conversation AI calibration log with session scores" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-missed-call-text-back",
+    "title": "GoHighLevel Missed-Call Text-Back Workflow",
+    "category": "crm",
+    "featured": false,
+    "client": "Local service business",
+    "industry": "Local services",
+    "platforms": ["GoHighLevel"],
+    "services": ["SMS automation", "Lead capture", "Conditional logic"],
+    "summary": "An instant SMS reply to every missed call that captures the lead, offers a booking link and alerts the team.",
+    "challenge": "Calls missed during jobs or after hours were lost leads. Most callers don't leave voicemail; they call the next business.",
+    "approach": "I built a missed-call trigger that sends a friendly text within seconds, checks whether the caller is a new or existing contact, offers the booking link, and creates a task for the team. If the caller replies, the conversation goes straight to the shared inbox.",
+    "steps": [
+      { "t": "trigger", "label": "Inbound call missed" },
+      { "t": "sms", "label": "'Sorry we missed you' text" },
+      { "t": "branch", "label": "New or existing contact?" },
+      { "t": "sms", "label": "Send booking link" },
+      { "t": "action", "label": "Create call-back task" },
+      { "t": "goal", "label": "Appointment booked" }
+    ],
+    "deliverables": ["Missed-call trigger", "SMS templates", "New vs existing logic", "Team notification and task"],
+    "results": [
+      { "value": "Seconds", "label": "response to every missed call" },
+      { "value": "100%", "label": "of missed callers contacted" },
+      { "value": "Auto", "label": "call-back tasks for the team" }
+    ],
+    "outcome": "Missed calls now turn into conversations and booked jobs instead of lost revenue.",
+    "images": []
+  },
+  {
+    "slug": "zapier-shopify-order-automation",
+    "title": "Zapier Order Routing for an Online Bakery & Shopify",
+    "category": "automation",
+    "featured": true,
+    "client": "Online bakery and retail brand",
+    "industry": "E-commerce / Food",
+    "platforms": ["Zapier", "Shopify"],
+    "services": ["Multi-path Zaps", "Order automation", "Error handling"],
+    "summary": "Multi-path Zapier automations that turn custom cake orders and appointment bookings into Shopify orders and customers, with notifications to Gmail, WhatsApp and Slack.",
+    "challenge": "Custom orders came in through forms with many options (flavours, sizes, shapes). Staff re-typed every order into Shopify, which was slow and error-prone.",
+    "approach": "I built Zaps that read each form submission, filter genuine orders, split into paths by flavour and size, format line items and create the order in Shopify. A second Zap finds or creates Shopify customers from booking data with a dedicated error path, and an order router sends confirmations by email and WhatsApp and posts to Slack.",
+    "steps": [
+      { "t": "trigger", "label": "New order form submission" },
+      { "t": "branch", "label": "Paths: chocolate, vanilla, red velvet, cheesecake" },
+      { "t": "action", "label": "Format line items and utilities" },
+      { "t": "cart", "label": "Create order in Shopify" },
+      { "t": "sms", "label": "Confirm via email + WhatsApp" },
+      { "t": "goal", "label": "Post to team Slack" }
+    ],
+    "deliverables": ["Order-to-Shopify Zap with 4+ paths", "Customer find/create with error handling", "Order notification router", "File archive automation to Google Drive"],
+    "results": [
+      { "value": "4+", "label": "product paths handled automatically" },
+      { "value": "0", "label": "orders re-typed by hand" },
+      { "value": "3", "label": "notification channels: email, WhatsApp, Slack" }
+    ],
+    "outcome": "Orders flow from form to Shopify to the kitchen without manual entry, and customers get instant confirmation.",
+    "images": [
+      { "src": "assets/work/zap-bakery-orders-shopify.jpg", "alt": "Zapier multi-path Zap routing cake orders by flavour into Shopify" },
+      { "src": "assets/work/zap-acuity-shopify.jpg", "alt": "Zapier Zap that finds or creates Shopify customers with success and error paths" },
+      { "src": "assets/work/zap-order-router-whatsapp-slack.jpg", "alt": "Zapier order router sending email, WhatsApp and Slack notifications" },
+      { "src": "assets/work/zap-gmail-drive-archive.jpg", "alt": "Zapier Zap that archives email attachments into Google Drive folders" }
+    ]
+  },
+  {
+    "slug": "zapier-crm-lead-routing",
+    "title": "AI Email Triage & CRM Lead Routing with Zapier",
+    "category": "automation",
+    "featured": false,
+    "client": "Real estate and mortgage teams",
+    "industry": "Real estate / Finance",
+    "platforms": ["Zapier", "Follow Up Boss", "Lofty", "Cloze"],
+    "services": ["AI automation", "CRM sync", "Lead routing"],
+    "summary": "Complex Zapier systems that read incoming emails with AI, route leads into the right CRM, sync loan statuses and create deals automatically.",
+    "challenge": "Agents and assistants were reading every email, copying details into CRMs and updating deal stages by hand across several tools.",
+    "approach": "I built an AI-assisted triage Zap that analyses labelled emails, splits them by category, creates or updates people and to-dos in Cloze, and labels each email as processed. Separate Zaps sync loan status changes into Lofty leads and create Follow Up Boss deals from multi-condition paths, with spreadsheet logging for audit.",
+    "steps": [
+      { "t": "trigger", "label": "New labelled email or loan update" },
+      { "t": "ai", "label": "AI classifies the request" },
+      { "t": "branch", "label": "Route by category and conditions" },
+      { "t": "crm", "label": "Create or update the person / lead" },
+      { "t": "action", "label": "Create task or deal" },
+      { "t": "goal", "label": "Label processed and log" }
+    ],
+    "deliverables": ["AI triage Zap with success/error paths", "Loan status to Lofty sync", "Follow Up Boss deal creation", "Google Sheets audit logging"],
+    "results": [
+      { "value": "20+", "label": "steps automated in the largest Zap" },
+      { "value": "4", "label": "tools kept in sync" },
+      { "value": "Hours", "label": "of admin removed every week" }
+    ],
+    "outcome": "Teams now work from up-to-date CRMs without manual data entry, and nothing in the inbox slips through.",
+    "images": [
+      { "src": "assets/work/zap-ai-email-triage-cloze.jpg", "alt": "Zapier AI email triage Zap with category paths into Cloze CRM" },
+      { "src": "assets/work/zap-fub-sales-pipeline.jpg", "alt": "Zapier sales pipeline Zap creating Follow Up Boss deals" },
+      { "src": "assets/work/zap-arive-lofty.jpg", "alt": "Zapier Zap syncing loan status updates into Lofty leads" },
+      { "src": "assets/work/zap-lead-scoring-paths.jpg", "alt": "Zapier multi-step lead routing Zap with conditional paths" }
+    ]
+  },
+  {
+    "slug": "zapier-kit-calendly-coach-stack",
+    "title": "Coach & Creator Automation Stack: Kit, Calendly and Forms",
+    "category": "automation",
+    "featured": false,
+    "client": "Online coach and course creator",
+    "industry": "Coaches / Creators",
+    "platforms": ["Zapier", "Kit", "Calendly"],
+    "services": ["Subscriber automation", "Booking automation", "Invoicing"],
+    "summary": "A set of Zaps that add subscribers to Kit from forms, bookings and emails, create client folders automatically and turn Stripe payments into invoices.",
+    "challenge": "The coach was copying names from Calendly, Google Forms and Gmail into Kit by hand and creating client folders and invoices manually.",
+    "approach": "I built small, reliable Zaps: Calendly invitee to Kit form, Google Forms response to Kit subscriber, matching Gmail messages formatted and added to Kit, Calendly invitee to a Google Drive client folder, and Stripe charge to a Wave invoice.",
+    "steps": [
+      { "t": "trigger", "label": "Booking, form response or email" },
+      { "t": "action", "label": "Format and clean the data" },
+      { "t": "email", "label": "Add subscriber to the Kit form" },
+      { "t": "action", "label": "Create client folder in Drive" },
+      { "t": "goal", "label": "Stripe charge creates Wave invoice" }
+    ],
+    "deliverables": ["5 production Zaps", "Kit form and tag mapping", "Drive folder structure", "Invoice automation"],
+    "results": [
+      { "value": "5", "label": "Zaps replacing daily admin" },
+      { "value": "3", "label": "lead sources feeding Kit automatically" },
+      { "value": "Auto", "label": "invoicing after every payment" }
+    ],
+    "outcome": "Every new lead and client is captured, organised and billed without the coach lifting a finger.",
+    "images": [
+      { "src": "assets/work/zap-calendly-kit.jpg", "alt": "Zapier Zap adding Calendly invitees to a Kit form" },
+      { "src": "assets/work/zap-google-forms-kit.jpg", "alt": "Zapier Zap adding Google Forms responses as Kit subscribers" },
+      { "src": "assets/work/zap-gmail-kit-subscriber.jpg", "alt": "Zapier Zap formatting Gmail messages and adding Kit subscribers" },
+      { "src": "assets/work/zap-calendly-drive.jpg", "alt": "Zapier Zap creating a Google Drive folder for each Calendly invitee" },
+      { "src": "assets/work/zap-stripe-wave-invoice.jpg", "alt": "Zapier Zap creating Wave invoices from Stripe charges" }
+    ]
+  },
+  {
+    "slug": "systeme-io-funnels",
+    "title": "Systeme.io Sales Funnel with Order Bump & Upsell",
+    "category": "funnels",
+    "featured": true,
+    "client": "Digital product creator",
+    "industry": "Coaches / Digital products",
+    "platforms": ["Systeme.io"],
+    "services": ["Sales funnel", "Checkout optimisation", "Email automation"],
+    "summary": "A complete Systeme.io funnel (sales page, checkout, order bump, upsell and confirmation) plus lead-generation and webinar funnels feeding the email list.",
+    "challenge": "The creator had a product but no joined-up funnel. Offers lived on separate pages and there was no way to increase order value at checkout.",
+    "approach": "I designed the sales page and checkout, added a relevant order bump and a one-click upsell so three offers sit in one smooth path, and connected confirmation emails. I also built a squeeze-page lead funnel and a webinar registration funnel with reminders and a replay page.",
+    "steps": [
+      { "t": "page", "label": "Sales page" },
+      { "t": "cart", "label": "Checkout + order bump" },
+      { "t": "action", "label": "One-click upsell offer" },
+      { "t": "page", "label": "Thank-you page" },
+      { "t": "email", "label": "Order confirmation email" },
+      { "t": "goal", "label": "Higher average order value" }
+    ],
+    "deliverables": ["Product sales funnel (6 steps)", "Order bump and upsell", "Lead-generation funnel", "Webinar registration funnel with reminders", "Automation rules and emails"],
+    "results": [
+      { "value": "3", "label": "offers combined in one funnel" },
+      { "value": "6", "label": "steps from sales page to confirmation" },
+      { "value": "3", "label": "funnels: sales, lead-gen, webinar" }
+    ],
+    "outcome": "The creator now has a single, professional path to purchase that is designed to raise order value, plus funnels that keep the list growing.",
+    "quote": { "text": "Sofiat helped build the funnel for my sales page, including the checkout for my main product, order bump and upsell. I appreciated having those three offers brought together in one funnel.", "by": "Upwork client, Systeme.io funnel project", "stars": 4 },
+    "images": [
+      { "src": "assets/work/systeme-io-product-sales-funnel.jpg", "alt": "Systeme.io product sales funnel steps: sales page, checkout, order bump, upsell, thank-you, confirmation" },
+      { "src": "assets/work/systeme-io-checkout-order-bump.jpg", "alt": "Long-form checkout page with order bump offer" },
+      { "src": "assets/work/systeme-io-lead-generation-funnel.jpg", "alt": "Systeme.io lead generation funnel with squeeze page" },
+      { "src": "assets/work/systeme-io-webinar-registration-funnel.jpg", "alt": "Systeme.io webinar registration funnel with reminder and replay steps" },
+      { "src": "assets/work/marketing-guide-landing-page.jpg", "alt": "Lead magnet landing page: 7 Proven Marketing Strategies free guide" }
+    ]
+  },
+  {
+    "slug": "zoho-crm-flow-automation",
+    "title": "Zoho CRM, Flow & Analytics Automation System",
+    "category": "automation",
+    "featured": false,
+    "client": "Multi-channel B2B business",
+    "industry": "B2B / IT",
+    "platforms": ["Zoho"],
+    "services": ["CRM automation", "Multi-app workflows", "Dashboards"],
+    "summary": "A connected Zoho system where emails, CRM records and forms flow into one automation that extracts data, prioritises urgent requests and updates every tool.",
+    "challenge": "Leads arrived via email, CRM records and several forms. Urgent requests were missed and reporting was assembled by hand.",
+    "approach": "I designed a Zoho Flow that collects inputs from Gmail, Salesforce and Zoho Forms, extracts data with an AI step, applies an urgency condition, then creates Asana tasks, updates the CRM contact, logs to Google Sheets and sends Slack alerts. Zoho CRM and Analytics dashboards show leads, conversion and campaign performance.",
+    "steps": [
+      { "t": "trigger", "label": "Email, CRM record or form submission" },
+      { "t": "ai", "label": "Extract data with AI builder" },
+      { "t": "branch", "label": "Urgency is high?" },
+      { "t": "action", "label": "Create Asana task + Slack alert" },
+      { "t": "crm", "label": "Update CRM contact, log to Sheets" },
+      { "t": "goal", "label": "Live dashboards" }
+    ],
+    "deliverables": ["Zoho Flow multi-app automation", "Lead management dashboard", "Marketing performance dashboard", "Sales overview reporting"],
+    "results": [
+      { "value": "248", "label": "new leads tracked in 30 days" },
+      { "value": "25%", "label": "lead conversion rate on the dashboard" },
+      { "value": "4", "label": "input sources unified" }
+    ],
+    "outcome": "Urgent requests are flagged instantly and leadership sees lead and campaign performance live instead of waiting for manual reports.",
+    "images": [
+      { "src": "assets/work/zoho-flow-automation-system.jpg", "alt": "Zoho Flow automation connecting Gmail, Salesforce and Zoho Forms to Asana, CRM, Sheets and Slack" },
+      { "src": "assets/work/zoho-crm-lead-management-dashboard.jpg", "alt": "Zoho CRM lead management dashboard with 248 new leads and 25% conversion rate" },
+      { "src": "assets/work/zoho-analytics-marketing-dashboard.jpg", "alt": "Zoho Analytics marketing performance dashboard" },
+      { "src": "assets/work/marketing-performance-dashboard-overview.jpg", "alt": "Zoho Analytics campaign performance overview" },
+      { "src": "assets/work/zoho-crm-sales-overview.jpg", "alt": "Zoho CRM sales overview dashboard" }
+    ]
+  },
+  {
+    "slug": "gohighlevel-websites-local-business",
+    "title": "GoHighLevel Websites & Lead Funnels for 39 Businesses",
+    "category": "funnels",
+    "featured": false,
+    "client": "Contractors, clinics, restaurants, studios and brands",
+    "industry": "Local services / Hospitality / Health",
+    "platforms": ["GoHighLevel"],
+    "services": ["Website build", "Landing pages", "On-page SEO", "Booking automation"],
+    "summary": "Thirty-nine GoHighLevel websites and lead funnels, each wired into the CRM with forms, booking calendars and automated follow-up.",
+    "challenge": "Small businesses had outdated sites that looked good at best but didn't capture or follow up with leads.",
+    "approach": "For each business I built a modern GoHighLevel site with service landing pages, on-page SEO and mobile optimisation, then connected forms and calendars to the CRM so every enquiry triggers follow-up. Projects ranged from carpentry and painting contractors to dental and chiropractic clinics, bakeries, restaurants, gyms, yoga studios and e-commerce brands.",
+    "steps": [
+      { "t": "page", "label": "Service landing page" },
+      { "t": "trigger", "label": "Form or booking submitted" },
+      { "t": "crm", "label": "Contact created in GoHighLevel" },
+      { "t": "sms", "label": "Instant SMS + email confirmation" },
+      { "t": "goal", "label": "Appointment or quote request" }
+    ],
+    "deliverables": ["39 websites and funnels", "Service landing pages", "On-page SEO", "Forms, calendars and booking flows", "CRM follow-up automations"],
+    "results": [
+      { "value": "39", "label": "GoHighLevel sites delivered" },
+      { "value": "10+", "label": "industries served" },
+      { "value": "100%", "label": "of forms wired into the CRM" }
+    ],
+    "outcome": "Each business got a professional site that works as a lead engine, not just a brochure.",
+    "images": []
+  }
+]

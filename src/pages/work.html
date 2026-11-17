@@ -1,0 +1,74 @@
+<!--meta
+title: Case Studies: Email Marketing & CRM Automation Projects | Sofira Blueprints
+description: 30 email marketing and CRM automation case studies: Klaviyo flows, HubSpot workflows, GoHighLevel automations, Zapier integrations, Mailchimp migrations, Systeme.io funnels and more, with the flows, builds and results.
+nav: work
+-->
+<!--head-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Email marketing and CRM automation case studies",
+  "url": "{{site}}/work.html",
+  "description": "Portfolio of email marketing, CRM, automation and funnel projects by Sofira Blueprints.",
+  "isPartOf": { "@id": "{{site}}/#website" },
+  "about": ["Email marketing", "CRM automation", "Klaviyo", "HubSpot", "GoHighLevel", "Zapier"]
+}
+</script>
+<!--/head-->
+
+<section class="page-hero bp-grid">
+  <div class="container">
+    <p class="eyebrow">Case studies</p>
+    <div class="page-hero__row">
+      <h1 data-split>The <em>blueprint</em> library.</h1>
+      <div class="page-hero__aside" data-reveal>
+        <div><strong>{{case_count}}</strong><span>case studies</span></div>
+        <div><strong>6</strong><span>disciplines</span></div>
+      </div>
+    </div>
+    <p class="lede" data-reveal>Open any project to see the problem, the automation blueprint (step by step), screenshots from the build and the results. Filter by discipline or platform, or search for your tool.</p>
+  </div>
+</section>
+
+<section class="container" style="padding-bottom:var(--sp-6)">
+  <div class="toolbar">
+    <div class="tabs" role="group" aria-label="Filter by discipline">
+      <button class="tab" type="button" data-cat-tab="all" aria-pressed="true">All</button>
+      <button class="tab" type="button" data-cat-tab="email" aria-pressed="false">Email</button>
+      <button class="tab" type="button" data-cat-tab="crm" aria-pressed="false">CRM</button>
+      <button class="tab" type="button" data-cat-tab="automation" aria-pressed="false">Automation</button>
+      <button class="tab" type="button" data-cat-tab="funnels" aria-pressed="false">Funnels</button>
+      <button class="tab" type="button" data-cat-tab="deliverability" aria-pressed="false">Deliverability</button>
+      <button class="tab" type="button" data-cat-tab="ai" aria-pressed="false">AI &amp; Outreach</button>
+    </div>
+    <label class="search"><span class="visually-hidden">Search case studies</span><svg><use href="#i-search"/></svg><input type="search" placeholder="Search: Klaviyo, migration, Shopify…" data-case-search></label>
+  </div>
+  <div class="platform-filters" role="group" aria-label="Filter by platform">
+    <span class="mono">Platform:</span>
+    {{case_platform_filters}}
+    <span class="result-count" data-result-count aria-live="polite" style="margin-left:auto">{{case_count}} case studies</span>
+  </div>
+
+  <div class="case-grid" data-case-grid>
+    {{case_cards}}
+  </div>
+  <p class="empty" data-empty hidden>No case studies match that filter yet. Try another platform, or <a href="contact.html#message">ask me directly</a>; I&rsquo;ve probably built it.</p>
+</section>
+
+<div class="drawer" data-drawer aria-hidden="true">
+  <div class="drawer__scrim" data-drawer-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Case study preview">
+    <div class="drawer__bar">
+      <div class="drawer__nav">
+        <button class="icon-btn" type="button" data-drawer-prev aria-label="Previous case study"><svg><use href="#i-arrow"/></svg></button>
+        <button class="icon-btn" type="button" data-drawer-next aria-label="Next case study"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="drawer__nav">
+        <a class="btn btn--ghost btn--sm" href="#" data-drawer-open><span>Open full page</span><svg><use href="#i-arrow-ur"/></svg></a>
+        <button class="icon-btn drawer__close" type="button" data-drawer-close aria-label="Close preview"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="drawer__body"></div>
+  </div>
+</div>

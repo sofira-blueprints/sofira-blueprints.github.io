@@ -36,10 +36,15 @@
     if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", t);
     document.documentElement.classList.add("js");
-    /* Logo intro: once per browser session, skipped for reduced motion */
+    /* Logo intro: plays whenever a visitor ARRIVES (new visit, link from another
+       site, or refresh). Skipped when clicking between pages of this site, on
+       back/forward, and for visitors who prefer reduced motion. */
     try {
-      if (!sessionStorage.getItem("sb-intro") && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        sessionStorage.setItem("sb-intro", "1");
+      var nav = (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]) || {};
+      var internal = false;
+      try { internal = !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (e) {}
+      var arriving = nav.type === "reload" || (!internal && nav.type !== "back_forward");
+      if (arriving && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         document.documentElement.classList.add("intro-on");
         setTimeout(function () { document.documentElement.classList.remove("intro-on"); }, 3100);
       }
